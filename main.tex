@@ -4,6 +4,8 @@
 \documentclass[aspectratio=\BeamerAspectRatio]{beamer}
 \usetheme{LeipzigClean}
 \input{TitlePageInfo.tex}
+\usepackage[backend=bibtex,style=authoryear,maxcitenames=2,maxbibnames=9,natbib=true,doi=true,url=false,isbn=false]{biblatex}
+\addbibresource{references.bib}
 
 \begin{document}
 \maketitlepage
@@ -36,30 +38,30 @@ Bzgl. der Kommunikationsstrategie ergeben sich folgende Fragen:
 \includegraphics[width=\linewidth,height=.57\textheight,keepaspectratio]{images/kontext.png}
 \end{frame}
 
-\begin{frame}{Planen der Vortragsstruktur}
-  \footnotesize
-\begin{myalert}[Einführung]
-  \begin{itemize}
-    \item Interesse wecken
-    \item Rapport und Glaubwürdigkeit aufbauen, Vorwissen aktivieren
-    \item Zielsetzung und Struktur vorstellen.
-  \end{itemize}
-\end{myalert}
-\begin{mynote}[Haupttteil]
-\begin{itemize}
-  \item bis zu fünf Kernbotschaften vermitteln
-  \item Beispiele, Analogien, Visualisierungen und Geschichten nutzen
-  \item Detailgrad und technische Tiefe an Zielgruppe anpassen
-  \item Klarheit schaffen über roten Faden
-\end{itemize}
-\end{mynote}
-\begin{myalert}[Schluss]
-  \begin{itemize}
-    \item Kernbotschaften wiederholen
-    \item Limitationen und offene Fragen benennen
-    \item Fazit und Ausblick geben
-  \end{itemize}
+\begin{frame}{Planung der Vortragsstruktur}
+\begin{columns}[T,onlytextwidth]
+  \column{.3\textwidth}
+  \begin{myalert}[1 · Einstieg]
+    Interesse wecken\\
+    Vorwissen aktivieren\\
+    Ziel und Ablauf klären
   \end{myalert}
+
+  \column{.36\textwidth}
+  \begin{mynote}[2 · Kernteil]
+    Bis zu fünf Kernbotschaften\\
+    Mit Beispielen und Bildern erklären\\
+    Tiefe an die Zielgruppe anpassen\\
+    Dem roten Faden folgen
+  \end{mynote}
+
+  \column{.3\textwidth}
+  \begin{myalert}[3 · Schluss]
+    Kernaussagen wiederholen\\
+    Offene Fragen benennen\\
+    Fazit und Ausblick geben
+  \end{myalert}
+\end{columns}
 \end{frame}
 
 \section{Design, Visualisierungen und Hilfsmittel}
@@ -99,9 +101,9 @@ Eine Vielzahl von Hilfsmitteln kann die Präsentation unterstützen. Beispiele s
 \begin{frame}{Mündliche Präsentationen halten}
 \keyidea{\textit{Du} bist die Präsentation, nicht die Folien.}
 \footnotesize
-Natürliche und effektive Kommunikation bedeutet
+Natürliche und effektive Kommunikation bedeutet ...
 
-\begin{mynote}[Verbal]
+\begin{mynote}[... Verbal]
   \begin{itemize}
     \item die Inhalte klar und verständlich zu vermitteln,
     \item die Aufmerksamkeit der Zuhörer*innen zu halten,
@@ -109,7 +111,7 @@ Natürliche und effektive Kommunikation bedeutet
   \end{itemize}
 \end{mynote}
 
-\begin{mynote}[Nonverbal]
+\begin{mynote}[... Nonverbal]
   \begin{itemize}
     \item Körpersprache, Gestik, Mimik und Blickkontakt bewusst einsetzen,
     \item Stimme, Lautstärke, Sprechtempo und Pausen variieren,
@@ -120,9 +122,121 @@ Natürliche und effektive Kommunikation bedeutet
 
 \section{Beispiel aus der Optik}
 
-\section{Feedback geben und Feedback annehmen}
+\begin{frame}{Beispiel aus der Optik}
+\includegraphics[width=0.6\textwidth]{images/optik_handout.png}
+\keyalert{Plant einen Vortrag zum Thema Optik anhand des Handouts.}
+\end{frame}
+
+\section{Feedback: Relevanz für den Lehrberuf geben und Feedback annehmen}
+\begin{frame}{Relevanz von Feedback für den Lehrberuf}
+\begin{itemize}
+  \item Hohe Relevanz für den Lernerfolg mit $d=0.48$ \citep{10.3389/fpsyg.2019.03087}
+  \begin{itemize}
+    \item Lehrende an Studierende: $d=.46$
+    \item Peers an Studierende: $d=.95$
+  \end{itemize}
+  \item hochinformatives Feedback: $d=.99$
+  \item bisher keine klaren Erkenntnisse zur besten Art des Feedbacks
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Feedback geben}
+\keyidea{Gutes Feedback ist sachlich, konstruktiv und beschreibend. }
+\begin{itemize}
+\item \textbf{Ich-Botschaften nutzen:} Von der eigenen Wahrnehmung sprechen statt verallgemeinernde Vorwürfe zu machen.
+\item \textbf{Konkret bleiben:} Klare Beispiele und Fakten anstelle von vagen Bewertungen nennen.
+\item \textbf{Zeitnah agieren:} Die Rückmeldung zeitnah zum beobachteten Verhalten geben.
+\item \textbf{Wertschätzender Rahmen:} Einen ungestörten Ort unter vier Augen wählen und auf eine respektvolle Haltung achten.
+\item \textbf{Lösungsorientiert sein:} Konkrete Wünsche für die Zukunft formulieren.
+\end{itemize}
+\slidesource{https://teamentwicklung-lab.de/feedback-regeln}
+\end{frame}
+
+\begin{frame}{Feedback annehmen}
+\keyidea{Feedback annehmen bedeutet, offen für Rückmeldungen zu sein und diese konstruktiv zu nutzen.}
+Tipps zum konstruktiven Umgang mit Feedback:
+\begin{itemize}
+  \item \textbf{Ausreden lassen:} Aktiv zuhören, ohne den anderen zu unterbrechen.
+  \item \textbf{Nicht rechtfertigen:} Auf sofortige Verteidigungsversuche oder Ausreden verzichten.
+  \item \textbf{Nachfragen und verstehen:} Unklarheiten durch offene Fragen klären und das Gehörte in eigenen Worten zusammenfassen.
+  \item \textbf{Dankbarkeit zeigen:} Das Feedback als Geschenk und Chance zur Weiterentwicklung betrachten.
+\end{itemize}
+\slidesource{https://teamentwicklung-lab.de/feedback-regeln}
+\end{frame}
+
 
 \section{Feedbackmethoden}
+\begin{frame}{Feedbackmethoden 1}
+\footnotesize
+\begin{mynote}[5-Finger-Feedback]
+Die SuS malen die Umrisse ihrer Hand auf ein Blatt Papier. An jeden Finger schreiben sie eine
+Bemerkung zum Kurs/zum Thema:
+\begin{itemize}
+  \item An Daumen schreiben sie etwas, das sie weiterverfolgen wollen „Da halte
+ich den Daumen drauf“ (Alternativ: Thumbs up – „das fand ich super“)
+\item Zeigefinger: „Das habe ich gelernt, das will ich mir merken“
+\item Mittelfinger: „Das hat mir gestunken“
+\item Ringfinger: „Die Atmosphäre hier…“
+\item Kleiner Finger: „Folgendes ist mir zu kurz gekommen…
+\end{itemize}
+\end{mynote}
+\end{frame}
+
+\begin{frame}{Feedbackmethoden 2}
+  \footnotesize
+\begin{mynote}[Blitzlicht]
+ein oder zwei Fragen formulieren (am besten verschriftlichen), z.B.:
+\begin{itemize}
+\item Was war das Wichtigste, das ich heute gelernt habe?
+\item Was hätte ich gerne anders gehabt?
+\item Was hätte ich gerne zusätzlich gehabt?/Was brauche ich noch?
+\end{itemize} 
+SuS antworten ganz knapp darauf
+Regeln: Kurz (ca. 2-3 Sätze); Konkret; kein Kommentar/keine Diskussion
+\end{mynote}
+\footnotesize
+\begin{mynote}[Mentimeter]
+Feedback kann auch digital über Mentimeter gesammelt werden. Die SuS geben ihre Rückmeldungen anonym ein, und die Ergebnisse werden in Echtzeit visualisiert. Fragen können z.B. sein: "Was hat dir besonders gefallen?" oder "Was könnte ich verbessern?"
+\end{mynote}
+
+\end{frame}
+
+\begin{frame}{Feedbackmethoden 3}
+\footnotesize
+  \begin{mynote}[Feedbackanker]
+Verschiedene Aspekte, zu denen Feedback gegeben werden soll, werden mit je einer Farbe
+versehen: Inhalt, Struktur, Körpersprache, Stimme und Sprache etc.
+
+SuS erhalten vor dem Vortrag einen kleinen Zettel in einer der Farben. Sie müssen sich
+nun während des Beitrags nur auf die eigene Kategorie konzentrieren und dazu Feedback geben. 
+So erhalten die Vortragenden hinterher ein umfassendes Feedback.
+  \end{mynote}
+  \begin{mynote}[Interaktive Mindmap]
+    In einer interaktiven Mindmap kann Feedback zu verschiedenen Aspekten einer Präsentation gesammelt werden. Die SuS tragen ihre Rückmeldungen zu den einzelnen Kategorien in die Mindmap ein, sodass ein umfassendes Bild entsteht. Kategorien könnten sein: 
+  \end{mynote}
+\end{frame}
+
+\begin{frame}{Feedbackmethoden 4}
+  \footnotesize
+\begin{mynote}[One-Minute-Paper]
+  Die SuS sollen kurz schriftlich eine Frage beantworten.
+Dazu werden Karten ausgeteilt, die vorne mit einem Minus, hinten mit einem Plus markiert sind.
+(Alternativ werden die Teilnehmer gebeten, ein Blatt zu halbieren und selbst zu markieren).
+Auf die Vorderseite sollen sie dann schreiben, was ihnen an der Veranstaltung besonders gefallen
+hat, auf die Rückseite was sie sich im weiteren Verlauf an Veränderungen wünschen.
+Die Art der Fragestellung bestimmt mit, wie präzise die Antworten sind. Logischerweise können mit
+unterschiedlichen Fragen unterschiedliche Ziele verfolgt werden.
+Alternative Fragen:
+\begin{itemize}
+\item Was war für Dich heute der Kernpunkt des Vortrags?
+\item Was war die Hauptfrage, die für Dich heute unbeantwortet blieb?
+\item Was ist für Dich die wichtigste Einsicht, die Du aus dieser Kurseinheit/Diskussion mitnimmst?
+\item Welches Argument hat Dich nicht überzeugt?
+\end{itemize}
+\end{mynote}
+\end{frame}
+
+
 
 \section{Abschluss und Fazit}
 \begin{frame}{Abschluss und Fazit}
