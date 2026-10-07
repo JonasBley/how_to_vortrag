@@ -3,21 +3,23 @@
 \providecommand{\BeamerAspectRatio}{169}
 \documentclass[aspectratio=\BeamerAspectRatio]{beamer}
 \usetheme{LeipzigClean}
+\usepackage[ngerman]{babel}
 \input{TitlePageInfo.tex}
+\usepackage{bm}
 \usepackage[backend=bibtex,style=authoryear,maxcitenames=2,maxbibnames=9,natbib=true,doi=true,url=false,isbn=false]{biblatex}
 \addbibresource{references.bib}
 
 \begin{document}
 \maketitlepage
 % Optional overview: uncomment when the talk has multiple sections.
-% \maketableofcontents
+\maketableofcontents
 % Optional section dividers: comment out the next line to hide them.
-\makesectionpopup
+ % \makesectionpopup
 
 \section{Strategie formulieren}
 
 \begin{frame}{Strategie formulieren: Überblick}
-Ihr kennt das bestimmt: Man muss einen Vortrag und hat keinen Plan was man tun soll.
+Ihr kennt das bestimmt: Man muss einen Vortrag halten und weiß nicht, wo man anfangen soll.
 
 \keyidea{Die Planung sollte im Kontext das Wechselspiel zwischen Zielgruppe, Zielsetzung und Umsetzung berücksichtigen.}
 
@@ -35,7 +37,7 @@ Bzgl. der Kommunikationsstrategie ergeben sich folgende Fragen:
   \item Balance zwischen Kognitiver Belastung und Erwartungen der Zuhörer*innen.
 \end{itemize}
 \centering
-\includegraphics[width=\linewidth,height=.57\textheight,keepaspectratio]{images/kontext.png}
+\includegraphics[width=\linewidth,height=.53\textheight,keepaspectratio]{images/kontext.png}
 \end{frame}
 
 \begin{frame}{Planung der Vortragsstruktur}
@@ -49,7 +51,7 @@ Bzgl. der Kommunikationsstrategie ergeben sich folgende Fragen:
 
   \column{.36\textwidth}
   \begin{mynote}[2 · Kernteil]
-    Bis zu fünf Kernbotschaften\\
+    Wenige klare Kernbotschaften\\
     Mit Beispielen und Bildern erklären\\
     Tiefe an die Zielgruppe anpassen\\
     Dem roten Faden folgen
@@ -67,39 +69,73 @@ Bzgl. der Kommunikationsstrategie ergeben sich folgende Fragen:
 \section{Design, Visualisierungen und Hilfsmittel}
 
 \begin{frame}{Foliendesign}
-\keyidea{Die Folien sollten die Präsentation unterstützen, nicht ersetzen.}
+\keyidea{Eine klare Aussage und eine passende Abbildung erleichtern die Orientierung.}
+\vspace{2mm}
+\begin{columns}[c,onlytextwidth]
+  \column{.34\textwidth}
+  \small
   \begin{itemize}
-    \item Weniger ist mehr: maximal 5-6 Zeilen Text pro Folie, maximal 5-6 Wörter pro Zeile.
-    \item Schriftgröße: mindestens 24pt, besser 28pt oder größer.
-    \item Kontraste nutzen, um Lesbarkeit zu erhöhen.
-    \item Einheitliches Layout und konsistente Farbpalette verwenden.
+    \item Text auf das Wesentliche kürzen.
+    \item Beschriftungen nahe am Bild platzieren.
+    \item Kontraste und Freiraum nutzen.
+    \item Lesbarkeit aus der letzten Reihe prüfen.
   \end{itemize}
+  \column{.63\textwidth}
+  \centering
+  \resizebox{\linewidth}{!}{\input{images/foliendesign.tikz}}
+\end{columns}
+\slidesource{Noetel et al. (2022)}
+\note{Die Abbildung zeigt ein editierbares Layoutbeispiel, keine empirischen Daten.
+Die Strahlenzeichnung bezieht sich auf Reflexion am ebenen Spiegel.
+Wort- und Zeilenzahlen sind keine universellen, empirisch gesicherten Grenzwerte.
+Auch Punktgrößen sind zwischen PowerPoint und Beamer nicht direkt übertragbar:
+Die projizierte Lesbarkeit hängt von Folienformat, Raum und Betrachtungsabstand ab.
+Für lernbezogene Gestaltungsprinzipien siehe \cite{noetel2022}.}
 \end{frame}
 
 \begin{frame}{Visualisierungen}
-\keyidea{Richtig eingesetzt können Visualisierungen und Hilfsmittel die Aufmerksamkeit der Zuhörer*innen erhöhen, die Verständlichkeit verbessern und die kognitive Belastung reduzieren.}
 
-Visualisierungen sollten \ldots
+\keyalert{Was meint ihr: was macht eine gute Visualisierung aus?}
+
+\vspace{3mm}
 \begin{itemize}
-  \item[\dots] übersichtlich und gut lesbar sein.
-  \item[\dots] Farben und räumliches Layout nutzen, um die wichtigsten Beziehungen und Botschaften hervorzuheben.
-  \item[\dots] Urheberrechte beachten.
+  \item \textbf{Kohärenz:} Unnötige Details und dekorative Bilder weglassen.
+  \item \textbf{Signalisierung:} Den entscheidenden Zusammenhang hervorheben.
+  \item \textbf{Räumliche Nähe:} Bild und zugehörige Beschriftung zusammen zeigen.
+  \item \textbf{Dosierung:} Komplexe Erklärungen in nachvollziehbare Schritte teilen.
 \end{itemize}
+\slidesource{Noetel et al. (2022); Fiorella \& Mayer (2021)}
+\note{\cite{noetel2022,fiorella2021}. Die Evidenz betrifft überwiegend Lernen mit
+multimedialen Materialien. Daraus folgt kein universelles Rezept für jede Rede.
+Zum Beispiel jeweils den besprochenen Lichtstrahl hervorheben. Zugänglichkeit und
+sprachliche Voraussetzungen bei der Entscheidung über sichtbaren Text berücksichtigen.}
 \end{frame}
 
 \begin{frame}{Hilfsmittel}
-Eine Vielzahl von Hilfsmitteln kann die Präsentation unterstützen. Beispiele sind:
+\begin{columns}[c,onlytextwidth]
+  \column{.43\textwidth}
+  \small
   \begin{itemize}
     \item Folien, Handouts, Flipcharts, Whiteboards, Overheadprojektoren
     \item Modelle, Anschauungsmaterial, Experimente
     \item Videos, Animationen, Simulationen
-    \item Interaktive Elemente: Quizze, Umfragen, Abstimmungen
+    \item Quizze, Umfragen, Abstimmungen: Lernen während des Vortrags.
   \end{itemize}
+  \column{.54\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/hilfsmittel-icons.png}
+\end{columns}
+\vspace{4mm}
+\keyidea{Was können die Zuhörenden damit besser verstehen oder selbst erarbeiten?}
+\note{Iconübersicht: Folien, Handout, Flipchart, Modell, Experiment, Video,
+Simulation und Umfrage. KI-generierte Illustration mit dem integrierten Bildwerkzeug,
+7. Oktober 2026. Die Bildzeichen dienen der Zuordnung der Beispiele.}
 \end{frame}
 
 \section{Mündliche Präsentationen halten}
 \begin{frame}{Mündliche Präsentationen halten}
-\keyidea{\textit{Du} bist die Präsentation, nicht die Folien.}
+\keyidea{Du bist die Präsentation, nicht die Folien.}
+\vspace{3mm}
 \footnotesize
 Natürliche und effektive Kommunikation bedeutet ...
 
@@ -123,47 +159,83 @@ Natürliche und effektive Kommunikation bedeutet ...
 \section{Beispiel aus der Optik}
 
 \begin{frame}{Beispiel aus der Optik}
-\includegraphics[width=0.6\textwidth]{images/optik_handout.png}
-\keyalert{Plant einen Vortrag zum Thema Optik anhand des Handouts.}
+  \centering
+  \keyalert{Plant einen Vortrag zum Thema Optik anhand des Handouts für eure Mitstudierenden.}
+  \begin{columns}
+    \column{0.5\textwidth}
+    Überlegt euch
+    \begin{itemize}
+    \item Ziel und Struktur des Vortrags,
+    \item Kernbotschaften für den Unterricht,
+    \item Visualisierung, die die Kernbotschaften oder einen Teil davon unterstützt,
+    \item Methoden und Materialien, die ihr einsetzen würdet.
+    \end{itemize}
+    \column{0.5\textwidth}
+    \includegraphics[width=0.6\textwidth]{images/optik_handout.png}
+  \end{columns}
+
 \end{frame}
 
-\section{Feedback: Relevanz für den Lehrberuf geben und Feedback annehmen}
+\section{Feedback im Lehrberuf}
 \begin{frame}{Relevanz von Feedback für den Lehrberuf}
+\keyidea{Feedback kann Lernen unterstützen. Sein Informationsgehalt ist entscheidend.}
+\vspace{4mm}
+435 Studien zeigen im Mittel $d=0{,}48$ \citep{10.3389/fpsyg.2019.03087}
+\vspace{4mm}
+
+23 Studien: kleine mittlere Verbesserung der Unterrichtsqualität $d=0{,}27$ \citep{roehl2025}
+
+Größere Effekte bei 
 \begin{itemize}
-  \item Hohe Relevanz für den Lernerfolg mit $d=0.48$ \citep{10.3389/fpsyg.2019.03087}
-  \begin{itemize}
-    \item Lehrende an Studierende: $d=.46$
-    \item Peers an Studierende: $d=.95$
-  \end{itemize}
-  \item hochinformatives Feedback: $d=.99$
-  \item bisher keine klaren Erkenntnisse zur besten Art des Feedbacks
+  \item Unterstützung der Interpretation,
+  \item Dialog mit der Klasse,
+  \item Möglichkeit, Feedback umzusetzen. 
 \end{itemize}
+
+% \source{$d$ bezeichnet eine standardisierte Effektgröße, keinen prozentualen Lernzuwachs.}
+% \slidesource{Wisniewski et al. (2020); Brandmo \& Gamlem (2025)}
+\note{\cite{10.3389/fpsyg.2019.03087,brandmo2025}.
+In Tabelle 3 der Metaanalyse stehen für Lehrende an Lernende d=.47 und für
+Peers d=.85, bei sehr ungleichen Teilgruppen (812 bzw. 16 Effekte).
+Diese Vergleiche zwischen Studien erlauben keine kausale Rangfolge der Feedbackgeber.
+Auch d=.99 für hochinformatives Feedback ist ein heterogener Teilgruppenbefund,
+kein garantierter Effekt. Brandmo und Gamlem betrachten 96 Studien zu 10- bis
+16-Jährigen mit unterschiedlichen Designs, darunter viele Beobachtungsstudien.}
 \end{frame}
 
 \begin{frame}{Feedback geben}
-\keyidea{Gutes Feedback ist sachlich, konstruktiv und beschreibend. }
+\keyidea{Feedback sollte informativ, zugeschnitten, und handlungsorientiert sein \citep{brandmo2025}. }
+\vspace{3mm}
+
 \begin{itemize}
-\item \textbf{Ich-Botschaften nutzen:} Von der eigenen Wahrnehmung sprechen statt verallgemeinernde Vorwürfe zu machen.
-\item \textbf{Konkret bleiben:} Klare Beispiele und Fakten anstelle von vagen Bewertungen nennen.
-\item \textbf{Zeitnah agieren:} Die Rückmeldung zeitnah zum beobachteten Verhalten geben.
-\item \textbf{Wertschätzender Rahmen:} Einen ungestörten Ort unter vier Augen wählen und auf eine respektvolle Haltung achten.
-\item \textbf{Lösungsorientiert sein:} Konkrete Wünsche für die Zukunft formulieren.
+  \item Beobachten, nicht bewerten, zum Beispiel \glqq Auf Folie X hast du das Thema von Argument Y bis zu Argument Z aufgearbeitet\grqq.
+  \item Wirkung auf die eigene Person beschreiben, zum Beispiel \glqq Für mich war das schwer verständlich, schwierig nachzuvollziehen\grqq.
+  \item Handlungsorientiert sein, zum Beispiel \glqq Du könntest das Argument Z noch mit einem Beispiel untermauern  oder die Argumentation mit einem Flussdiagramm beschreiben\grqq.
+  \item Negativität und Schwammigkeit vermeiden.
+  \item Bereit sein, Rückfragen zu beantworten.
 \end{itemize}
-\slidesource{https://teamentwicklung-lab.de/feedback-regeln}
+
+% \slidesource{Wisniewski et al. (2020); Brandmo \& Gamlem (2025)}
+\note{\cite{10.3389/fpsyg.2019.03087,brandmo2025}. Das Beispiel ist selbst
+formuliert. Ein respektvoller Rahmen bleibt wichtig. Sofortiges Feedback ist
+nicht für jede Aufgabe grundsätzlich besser als verzögertes Feedback.}
 \end{frame}
 
 \begin{frame}{Feedback annehmen}
-\keyidea{Feedback annehmen bedeutet, offen für Rückmeldungen zu sein und diese konstruktiv zu nutzen.}
-Tipps zum konstruktiven Umgang mit Feedback:
+\keyidea{Feedback nutzen heißt verstehen, abwägen und eine Verbesserung erproben.}
+\vspace{3mm}
 \begin{itemize}
-  \item \textbf{Ausreden lassen:} Aktiv zuhören, ohne den anderen zu unterbrechen.
-  \item \textbf{Nicht rechtfertigen:} Auf sofortige Verteidigungsversuche oder Ausreden verzichten.
-  \item \textbf{Nachfragen und verstehen:} Unklarheiten durch offene Fragen klären und das Gehörte in eigenen Worten zusammenfassen.
-  \item \textbf{Dankbarkeit zeigen:} Das Feedback als Geschenk und Chance zur Weiterentwicklung betrachten.
+  \item \textbf{Aktiv Zuhören:} Die Rückmeldung zunächst vollständig aufnehmen und zum Beispiel paraphrasieren.
+  \item \textbf{Nachfragen:} Zum Beispiel um ein konkretes Beispiel oder die zugrunde liegenden Schwierigkeiten genauer erfragen.
+  \item \textbf{Abwägen:} Die Rückmeldung mit dem Lernziel und der eigenen Beobachtung vergleichen.
+  \item \textbf{Umsetzen:} Mögliche nächste Schritte beschreiben und Rückmeldung dazu einholen.
 \end{itemize}
-\slidesource{https://teamentwicklung-lab.de/feedback-regeln}
-\end{frame}
 
+\keyalert{Wir probieren es aus: Findet euch mit einem anderen Paar zusammen, zeigt euren Plan zum Optikvortrag und lasst euch Feedback geben.}
+
+\note{Die Regeln sind eine praktische Ableitung aus der Forschung zur
+Feedbackaufnahme \cite{brandmo2025}, kein empirisch geprüftes Regelpaket.}
+\end{frame}
 
 \section{Feedbackmethoden}
 \begin{frame}{Feedbackmethoden 1}
@@ -172,12 +244,12 @@ Tipps zum konstruktiven Umgang mit Feedback:
 Die SuS malen die Umrisse ihrer Hand auf ein Blatt Papier. An jeden Finger schreiben sie eine
 Bemerkung zum Kurs/zum Thema:
 \begin{itemize}
-  \item An Daumen schreiben sie etwas, das sie weiterverfolgen wollen „Da halte
+  \item An den Daumen schreiben sie etwas, das sie weiterverfolgen wollen „Da halte
 ich den Daumen drauf“ (Alternativ: Thumbs up – „das fand ich super“)
 \item Zeigefinger: „Das habe ich gelernt, das will ich mir merken“
 \item Mittelfinger: „Das hat mir gestunken“
 \item Ringfinger: „Die Atmosphäre hier…“
-\item Kleiner Finger: „Folgendes ist mir zu kurz gekommen…
+\item Kleiner Finger: „Folgendes ist mir zu kurz gekommen…“
 \end{itemize}
 \end{mynote}
 \end{frame}
@@ -212,7 +284,7 @@ nun während des Beitrags nur auf die eigene Kategorie konzentrieren und dazu Fe
 So erhalten die Vortragenden hinterher ein umfassendes Feedback.
   \end{mynote}
   \begin{mynote}[Interaktive Mindmap]
-    In einer interaktiven Mindmap kann Feedback zu verschiedenen Aspekten einer Präsentation gesammelt werden. Die SuS tragen ihre Rückmeldungen zu den einzelnen Kategorien in die Mindmap ein, sodass ein umfassendes Bild entsteht. Kategorien könnten sein: 
+    In einer interaktiven Mindmap kann Feedback zu verschiedenen Aspekten einer Präsentation gesammelt werden. Die SuS tragen ihre Rückmeldungen zu den einzelnen Kategorien in die Mindmap ein, sodass ein umfassendes Bild entsteht. Kategorien könnten sein: Inhalt, Struktur, Visualisierung und Verständlichkeit. 
   \end{mynote}
 \end{frame}
 
@@ -237,115 +309,31 @@ Alternative Fragen:
 \end{frame}
 
 
-
 \section{Abschluss und Fazit}
 \begin{frame}{Abschluss und Fazit}
-Schlüsselbotschaften:
 \begin{itemize}
-  \item Die Planung von Präsentationen sollte im Kontext das Wechselspiel zwischen Zielgruppe, Zielsetzung und Umsetzung berücksichtigen.
+  \item Die Planung von Präsentationen sollte das Wechselspiel zwischen Zielgruppe, Zielsetzung und Umsetzung im Kontext berücksichtigen.
   \item Eine klare Strategie und Struktur ist entscheidend für eine erfolgreiche Präsentation.
-  \item Folien und Visualisierungen sollten die Präsentation unterstützen, nicht ersetzen.
-  \item \textit{Du} bist die Präsentation, nicht die Folien: verbale und nonverbale Kommunikationsrichtlinien beachten.
-  \item Feedback ist ein wertvolles Geschenk.
+  \item Visualisierungen und Hilfsmittel sollten die Präsentation unterstützen, nicht ersetzen.
+  \item \textit{Du} bist die Präsentation, nicht die Folien: verbale und nonverbale Kommunikation beachten.
+  \item Gutes Feedback ist ein wertvolles Geschenk.
 \end{itemize}
+
+Ausblick: Ihr haltet im Semester fachliche Vorträge. Informationsblatt beachten. Überlegt euch zudem eine Feedbackmethode und wendet sie an.
 \end{frame}
+
+\begin{frame}{Literatur: Präsentationen}
+  \footnotesize
+  \nocite{noetel2022,fiorella2021,agarwal2021,10.3389/fpsyg.2019.03087,brandmo2025,roehl2025,levinielsen2026}
+  \printbibliography[heading=none,keyword=presentation]
+\end{frame}
+
+\begin{frame}{Literatur: Feedback}
+  \footnotesize
+  \printbibliography[heading=none,keyword=learningfeedback]
+\end{frame}
+
 \appendix
 \section{Example layouts}
-
-% EXAMPLE 1: Short text slide with a single highlighted takeaway.
-\begin{frame}{A clear research question}
-  \begin{itemize}
-    \setlength{\itemsep}{4mm}
-    \item Introduce the problem and the audience's reason to care.
-    \item State the question in one sentence.
-    \item Explain which evidence could answer it.
-  \end{itemize}
-  \vspace{4mm}
-  \keyidea{One main idea per slide}
-  \note{Use this space for speaking notes, transitions, or details that do not belong on the slide.}
-\end{frame}
-
-% EXAMPLE 2: Text and an image, preserving the image's proportions.
-\begin{frame}{Text and figure}
-  \begin{columns}[T,onlytextwidth]
-    \column{0.53\textwidth}
-      \begin{block}{Polarization states}
-        The Poincar\'e sphere represents normalized states of fully polarized light.
-      \end{block}
-      \begin{itemize}
-        \item Linear states lie on the equator.
-        \item Circular states lie at the poles.
-      \end{itemize}
-      \vspace{3mm}
-      Intensity is a separate quantity.
-    \column{0.43\textwidth}
-      \centering
-      \includegraphics[width=\linewidth,height=.57\textheight,keepaspectratio]{images/poincare.png}
-      \source{Example image from the original presentation.}
-  \end{columns}
-  \slidesource{Source presentation: polarization applet}
-\end{frame}
-
-% EXAMPLE 3: Display mathematics and a plain Beamer block.
-\begin{frame}{Equations and definitions}
-  A normalized Jones vector for a fully polarized state is
-  \[
-    \mathbf{J}=\begin{pmatrix}a\\b\,e^{i\varphi}\end{pmatrix},
-    \qquad a,b\geq 0,\qquad a^2+b^2=1.
-  \]
-  \vspace{2mm}
-  \begin{block}{Notation}
-    The amplitudes $a$ and $b$ describe the two transverse components.
-    Their relative phase is $\varphi$.
-  \end{block}
-  \keyidea{Define symbols close to the equation}
-\end{frame}
-
-% EXAMPLE 4: An editable table with automatically wrapping columns.
-% This table describes layouts, not study findings or invented data.
-\begin{frame}{A concise comparison}
-  \begin{tabularx}{\textwidth}{@{}P{.20\textwidth}Y Y@{}}
-    \toprule
-    \textbf{Layout} & \textbf{Typical use} & \textbf{Content} \\
-    \midrule
-    Text & Introduce a question & A short argument and a takeaway \\
-    Text and figure & Explain a visual representation & A figure beside its interpretation \\
-    Equation & Define a model & A formula and its variables \\
-    Table & Compare alternatives & Consistent categories in each row \\
-    \bottomrule
-  \end{tabularx}
-  \vspace{3mm}
-  \source{Example table. Replace these entries with your own content.}
-\end{frame}
-
-% EXAMPLE 5: The two visible callout styles from the source deck.
-% Beamer's \note{...} is for speaker notes; mynote is visible on the slide.
-\begin{frame}{Notes and important points}
-  \begin{mynote}[Definition]
-    Use a blue callout for a short definition or supporting explanation.
-  \end{mynote}
-  \vspace{3mm}
-  \begin{myalert}[Important distinction]
-    Use a red callout for a condition, limitation, or distinction that the audience needs to retain.
-  \end{myalert}
-\end{frame}
-
-% Closing slide: replace the bracketed text with your own details.
-\begin{frame}{Discussion}
-  \vfill
-  {\Large\bfseries Your main conclusion goes here.\par}
-  \vspace{7mm}
-  Which question should the audience discuss next?\par
-  \vspace{7mm}
-  {\small\color{Muted}[Your name]\quad [Your contact or project link]\par}
-  \vfill
-\end{frame}
-
-% Optional appendix. Disable divider pages for backup material.
-% \appendix
-% \AtBeginSection[]{}
-% \begin{frame}{Additional details}
-%   Supporting material goes here.
-% \end{frame}
 
 \end{document}

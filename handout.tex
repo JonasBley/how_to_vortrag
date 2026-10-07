@@ -1,90 +1,160 @@
-% Hauptdatei. Mit XeLaTeX oder LuaLaTeX zweimal kompilieren.
+% Seminarhandout zur aktuellen main.tex.
+% Mit XeLaTeX und BibTeX kompilieren: latexmk -xelatex handout.tex
 \documentclass[11pt,a4paper,parskip=half]{scrartcl}
 \usepackage{leipzig-handout}
 \input{Angaben.tex}
+\usepackage{csquotes}
+\usepackage[backend=bibtex,style=authoryear,maxcitenames=2,
+  maxbibnames=3,minbibnames=1,giveninits=true,uniquename=init,doi=true,url=false,isbn=false]{biblatex}
+\addbibresource{references.bib}
+\setlength{\bibitemsep}{3pt}
+\setlength{\bibhang}{1em}
+\renewcommand*{\bibfont}{\footnotesize}
+\setlength{\emergencystretch}{1em}
+\hypersetup{pdftitle={How to Vortrag und Feedback -- Handout},pdfauthor={Jonas Bley}}
 
-% Optional: Randmuster fuer eine sparsame Druckfassung ausschalten.
-% \Randmusterfalse
+% Gleichmaessige Schreibzeilen mit 8,5 mm Abstand.
+\newcommand{\schreiblinien}[1]{%
+  \par\begingroup\offinterlineskip\setlength{\parskip}{0pt}%
+  \color{aquamarin!65!basalt}%
+  \foreach \n in {1,...,#1}{\vbox to 8.5mm{\vfill\hrule width\linewidth height .4pt}}%
+  \endgroup\par}
 
+% Optional: \Randmusterfalse fuer eine besonders sparsame Druckfassung.
 \begin{document}
 \handouttitel
 
-% Die folgenden Beispiele durch eigene Inhalte ersetzen.
-\section{Thema und Lernziele}
-Eine kurze Einleitung ordnet das Thema ein, benennt die Leitfrage
-und stellt den Bezug zur Lehrveranstaltung her.
-
-Nach der Sitzung können die Teilnehmenden beispielsweise
+\section{Strategie und Vortragsstruktur}
+Stimmt \textbf{Zielgruppe, Zielsetzung und Umsetzung} im jeweiligen Kontext aufeinander ab:
 \begin{itemize}
-  \item einen zentralen Begriff in eigenen Worten erklären,
-  \item zwei Ansätze anhand geeigneter Kriterien vergleichen und
-  \item das Gelernte auf eine konkrete Aufgabe anwenden.
+  \item \textbf{Zielgruppe:} Was wissen die Zuhörenden bereits? Was erwarten sie?
+  \item \textbf{Ziel:} Was sollen sie anschließend verstehen oder erklären können?
+  \item \textbf{Umsetzung:} Welche fachliche Tiefe, Literatur, Sprache und
+        Hilfsmittel passen zu Ziel, verfügbarer Zeit und Raum?
 \end{itemize}
 
-\section{Begriffe und Kerngedanken}
-\begin{merksatz}[Zentraler Begriff]
-Hier steht eine kurze Definition oder eine zentrale Aussage.
-Ein anschließendes Beispiel kann den Begriff veranschaulichen.
-\end{merksatz}
-
-Im Fließtext können Sie Zusammenhänge erklären und Begriffe durch
-\textbf{Fettdruck} hervorheben. Zusätzliche Angaben passen in eine
-Fußnote.\footnote{Beispiel einer ergänzenden Erläuterung.}
-
-\section{Eine Gegenüberstellung}
-% Die Tabelle ist direkt in den Text eingebunden und verschiebt sich nicht.
-\begin{tabularx}{\linewidth}{@{}P{.22\linewidth}Y Y@{}}
+\begin{tabularx}{\linewidth}{@{}P{.16\linewidth}Y@{}}
   \toprule
-  \textbf{Kriterium} & \textbf{Ansatz A} & \textbf{Ansatz B} \\
+  \textbf{Phase} & \textbf{Aufgabe} \\
   \midrule
-  Ziel & Beschreibung des ersten Ziels & Beschreibung des zweiten Ziels \\
-  Vorgehen & Zentrale Schritte des ersten Ansatzes & Zentrale Schritte des zweiten Ansatzes \\
-  Anwendung & Ein passendes Beispiel & Ein passendes Beispiel \\
+  Einstieg & Interesse wecken, Vorwissen aktivieren, Ziel und Ablauf klären. \\
+  Kernteil & Wenige klare Kernbotschaften mit Beispielen und Bildern erklären;
+             Tiefe an die Zielgruppe anpassen und dem roten Faden folgen. \\
+  Schluss & Kernaussagen aufgreifen, offene Fragen benennen, Fazit und Ausblick geben. \\
   \bottomrule
 \end{tabularx}
-\quelle{Beispieltabelle. Inhalte und gegebenenfalls Quellenangabe ersetzen.}
 
-\section{Kurze Reflexion}
-Welche Verbindung sehen Sie zwischen dem Thema und Ihrem bisherigen Wissen?
-\notizlinien[2]
-
-% Nur fuer die Demonstration der Fortsetzungsseite.
-% Ohne \newpage fliesst der eigene Inhalt automatisch weiter.
-\newpage
-
-\section{Beispiel und Anwendung}
-Beschreiben Sie hier einen Fall, eine Beobachtung oder eine Aufgabe,
-auf die sich die zuvor erläuterten Begriffe anwenden lassen.
-Bei mathematischen Themen können Sie Formeln ergänzen, zum Beispiel
-\[
-  \bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i.
-\]
-Dabei bezeichnet $\bar{x}$ den arithmetischen Mittelwert der $n$ Werte $x_i$.
-
-\subsection{Arbeitsauftrag}
-\begin{enumerate}
-  \item Beschreiben Sie den Fall in eigenen Worten.
-  \item Ordnen Sie die Beobachtungen den passenden Begriffen zu.
-  \item Begründen Sie Ihre Einschätzung mit Bezug auf die Inhalte der Sitzung.
-\end{enumerate}
-
-\begin{merksatz}[Ergebnissicherung]
-Halten Sie Ihre wichtigste Erkenntnis in einem Satz fest. Ergänzen Sie
-anschließend eine Frage, die noch offen geblieben ist.
+\section{Folien, Visualisierungen und Hilfsmittel}
+\begin{merksatz}[Gestaltungsziel]
+Klare Aussagen und passende Abbildungen unterstützen eure Erklärung.
 \end{merksatz}
 
-\section{Raum für Notizen}
-\notizlinien[6]
-
-\section{Literatur und weiterführende Hinweise}
-% Platzhalter ersetzen; hier werden keine realen Quellen behauptet.
-\begin{description}[font=\normalfont\bfseries,style=nextline]
-  \item[Grundlagentext]
-    Nachname, Vorname (Jahr): \emph{Titel des Textes}. Verlag oder Zeitschrift.
-  \item[Materialien zur Sitzung]
-    Titel der Materialien, Lernplattform oder Projektadresse.
+\begin{description}[font=\normalfont\bfseries,leftmargin=0pt]
+  \item[Kohärenz:] Unnötige Details und dekorative Bilder weglassen.
+  \item[Signalisierung:] Den entscheidenden Zusammenhang hervorheben.
+  \item[Räumliche Nähe:] Bild und zugehörige Beschriftung zusammen zeigen.
+  \item[Dosierung:] Komplexe Erklärungen in nachvollziehbare Schritte teilen.
 \end{description}
-\quelle{Platzhalter für Ihre Quellen. Für umfangreiche Literaturlisten
-können Sie ein Literaturverwaltungs-Paket ergänzen.}
+\quelle{\textcite{noetel2022,fiorella2021}.}
+
+\textbf{Lesbarkeit:} Text kürzen, Kontraste und Freiraum nutzen und die Folie
+aus der letzten Reihe prüfen.
+
+\textbf{Hilfsmittel passend auswählen:} Folien, Handouts, Flipcharts,
+Whiteboards und Overheadprojektoren; Modelle, Anschauungsmaterial und Experimente;
+Videos, Animationen und Simulationen. Quizze, Umfragen und Abstimmungen ermöglichen
+Beteiligung. Leitfrage: \emph{Was können die Zuhörenden damit besser verstehen
+oder selbst erarbeiten?}
+
+\newpage
+\section{Mündlich präsentieren}
+\begin{itemize}
+  \item \textbf{Inhalt und Sprache:} Klar erklären, die Aufmerksamkeit halten
+    und Kernbotschaften betonen.
+  \item \textbf{Stimme:} Lautstärke, Sprechtempo und Pausen bewusst variieren.
+  \item \textbf{Körpersprache und Raum:} Gestik, Mimik und Blickkontakt einsetzen;
+    Raum und Hilfsmittel passend nutzen.
+\end{itemize}
+
+\section{Feedback im Lehrberuf}
+Feedback kann das Lernen und die Unterrichtsentwicklung unterstützen.
+\textcite{10.3389/fpsyg.2019.03087} berichten über 435 Studien einen mittleren
+Effekt von $d=0{,}48$ auf das Lernen. \textcite{roehl2025} finden in 23 Studien
+zu Rückmeldungen von Schüler*innen an Lehrkräfte eine kleine mittlere
+Verbesserung der Unterrichtsqualität ($d=0{,}27$), besonders bei Unterstützung der Auswertung und dem Dialog mit der Klasse.
+
+\textbf{Feedback geben:} Die Rückmeldung sollte informativ, auf die Situation
+zugeschnitten und handlungsorientiert sein \parencite{brandmo2025}.
+\begin{enumerate}[itemsep=1pt]
+  \item \textbf{Beobachtung:} Eine konkrete Stelle beschreiben und von der Bewertung trennen.
+  \item \textbf{Wirkung:} Benennen, was für euch verständlich oder schwer nachvollziehbar war.
+  \item \textbf{Nächster Schritt:} Eine umsetzbare Verbesserung vorschlagen.
+\end{enumerate}
+\textbf{Feedback annehmen:} Aktiv zuhören und paraphrasieren, bei Unklarheiten
+nachfragen, die Rückmeldung mit Lernziel und eigener Beobachtung abgleichen.
+Anschließend mögliche nächste Schritte formulieren und Rückmeldung dazu einholen.
+Formuliert konkret und respektvoll und bleibt für Rückfragen offen.
+
+\section{Anwendung: einen Optikvortrag planen}
+Plant zu zweit anhand des bereitgestellten \textbf{Optik-Handouts} einen Vortrag
+für eure Mitstudierenden. Haltet euren Plan hier fest. Auf der Rückseite ist Platz
+für eure Visualisierungsideen.
+
+\textbf{Ziel und Struktur des Vortrags}
+\schreiblinien{3}
+\vspace{3mm}
+\textbf{Kernbotschaften für den Unterricht}
+\schreiblinien{4}
+\vspace{3mm}
+\textbf{Methoden und Materialien}
+\schreiblinien{3}
+
+\newpage
+% Seite 4 liegt direkt auf der Rueckseite des Planungsbogens.
+\section*{Visualisierungsideen}
+Haltet hier eure Ideen zur Visualisierung der \textbf{Vortragsstruktur}
+oder der \textbf{Kernbotschaften} fest.
+
+\vspace{4mm}
+\begingroup
+\setlength{\fboxsep}{0pt}
+\setlength{\fboxrule}{.4pt}
+\noindent\fcolorbox{aquamarin!65!basalt}{white}{%
+  \parbox[t][212mm][t]{\dimexpr\linewidth-2\fboxrule\relax}{\strut}}
+\endgroup
+
+\newpage
+\section{Feedbackmethoden im Überblick}
+Die Frage bestimmt, welche Information ihr erhaltet. Rückmeldungen zum
+Verständnis und Rückmeldungen zum Erleben der Veranstaltung erfüllen
+unterschiedliche Zwecke.
+
+{\small
+\begin{tabularx}{\linewidth}{@{}P{.24\linewidth}Y@{}}
+\toprule
+\textbf{Methode} & \textbf{Durchführung und mögliche Fragen} \\
+\midrule
+5-Finger-Feedback & Handumriss beschriften: Daumen -- Das möchte ich weiterverfolgen
+oder das fand ich gut; Zeigefinger -- Das habe ich gelernt; Mittelfinger -- Das hat
+mich gestört; Ringfinger -- So war die Atmosphäre; kleiner Finger -- Das kam zu kurz. \\
+Blitzlicht & Ein oder zwei Fragen stellen, z.\,B. „Was war heute besonders wichtig?“
+oder „Was brauche ich noch?“ Alle antworten kurz und konkret in zwei bis drei Sätzen.
+Während der Runde keine Kommentare oder Diskussion. \\
+Digitale Umfrage & Beispielsweise mit Mentimeter Rückmeldungen anonym sammeln
+und gemeinsam sichtbar machen: „Was hat euch gefallen?“ oder „Was könnte ich verbessern?“ \\
+Feedbackanker & Vor dem Vortrag Beobachtungsaspekte verteilen, z.\,B. Inhalt,
+Struktur, Körpersprache oder Stimme. Jede Person achtet auf ihren zugeteilten Aspekt.
+Karten mit Farbe und Bezeichnung erleichtern die Zuordnung. \\
+Interaktive Mindmap & Rückmeldungen gemeinsam nach Kategorien sammeln,
+z.\,B. Inhalt, Struktur, Visualisierung und Verständlichkeit. \\
+One-Minute-Paper & Eine kurze schriftliche Rückmeldung geben lassen:
+„Was war der Kernpunkt?“ und „Welche Frage bleibt offen?“ Alternativ auf einer Karte
+festhalten, was gefallen hat und welche Veränderung gewünscht ist. \\
+\bottomrule
+\end{tabularx}
+}
+
+\section{Literatur}
+\printbibliography[heading=none]
 
 \end{document}

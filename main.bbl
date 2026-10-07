@@ -17,6 +17,296 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global/global}
+  \entry{agarwal2021}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=APK}{%
+         family={Agarwal},
+         familyi={A\bibinitperiod},
+         given={Pooja\bibnamedelima K.},
+         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=NLD}{%
+         family={Nunes},
+         familyi={N\bibinitperiod},
+         given={Ludmila\bibnamedelima D.},
+         giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BJR}{%
+         family={Blunt},
+         familyi={B\bibinitperiod},
+         given={Janell\bibnamedelima R.},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \keyw{presentation}
+    \strng{namehash}{APK+1}
+    \strng{fullhash}{APKNLDBJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.1007/s10648-021-09595-9
+    \endverb
+    \field{pages}{1409\bibrangedash 1453}
+    \field{title}{Retrieval Practice Consistently Benefits Student Learning: A
+  Systematic Review of Applied Research in Schools and Classrooms}
+    \field{volume}{33}
+    \field{journaltitle}{Educational Psychology Review}
+    \field{year}{2021}
+  \endentry
+
+  \entry{brandmo2025}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=BC}{%
+         family={Brandmo},
+         familyi={B\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GSM}{%
+         family={Gamlem},
+         familyi={G\bibinitperiod},
+         given={Siv\bibnamedelima M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{learningfeedback}
+    \strng{namehash}{BCGSM1}
+    \strng{fullhash}{BCGSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.3389/feduc.2025.1572950
+    \endverb
+    \field{eid}{1572950}
+    \field{title}{Students' Perceptions and Outcome of Teacher Feedback: A
+  Systematic Review}
+    \field{volume}{10}
+    \field{journaltitle}{Frontiers in Education}
+    \field{year}{2025}
+  \endentry
+
+  \entry{fiorella2021}{incollection}{}{}
+    \name{author}{2}{}{%
+      {{hash=FL}{%
+         family={Fiorella},
+         familyi={F\bibinitperiod},
+         given={Logan},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MRE}{%
+         family={Mayer},
+         familyi={M\bibinitperiod},
+         given={Richard\bibnamedelima E.},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=MRE}{%
+         family={Mayer},
+         familyi={M\bibinitperiod},
+         given={Richard\bibnamedelima E.},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=FL}{%
+         family={Fiorella},
+         familyi={F\bibinitperiod},
+         given={Logan},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \keyw{presentation}
+    \strng{namehash}{FLMRE1}
+    \strng{fullhash}{FLMRE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{The Cambridge Handbook of Multimedia Learning}
+    \verb{doi}
+    \verb 10.1017/9781108894333.019
+    \endverb
+    \field{edition}{3}
+    \field{title}{Principles for Reducing Extraneous Processing in Multimedia
+  Learning}
+    \field{year}{2021}
+  \endentry
+
+  \entry{levinielsen2026}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=LNS}{%
+         family={Levi-Nielsen},
+         familyi={L\bibinithyphendelim N\bibinitperiod},
+         given={Shana},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Dowdy},
+         familyi={D\bibinitperiod},
+         given={Art},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TRM}{%
+         family={Tobin},
+         familyi={T\bibinitperiod},
+         given={Ren{\'e}e\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SWJ}{%
+         family={Schneider},
+         familyi={S\bibinitperiod},
+         given={W.\bibnamedelima Joel},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{teacherfeedback}
+    \strng{namehash}{LNS+1}
+    \strng{fullhash}{LNSDATRMSWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2026}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1016/j.jsp.2025.101527
+    \endverb
+    \field{eid}{101527}
+    \field{title}{A Systematic Review and Single-Case Meta-Analysis of
+  Performance Feedback as Teacher Professional Development}
+    \field{volume}{115}
+    \field{journaltitle}{Journal of School Psychology}
+    \field{year}{2026}
+  \endentry
+
+  \entry{noetel2022}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=NM}{%
+         family={Noetel},
+         familyi={N\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Griffith},
+         familyi={G\bibinitperiod},
+         given={Shantell},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DO}{%
+         family={Delaney},
+         familyi={D\bibinitperiod},
+         given={Oscar},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=HNR}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Nicola\bibnamedelima Rose},
+         giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sanders},
+         familyi={S\bibinitperiod},
+         given={Taren},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Parker},
+         familyi={P\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=dPCB}{%
+         prefix={del},
+         prefixi={d\bibinitperiod},
+         family={Pozo\bibnamedelima Cruz},
+         familyi={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Borja},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Lonsdale},
+         familyi={L\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{presentation}
+    \strng{namehash}{NM+1}
+    \strng{fullhash}{NMGSDOHNRSTPPPCBdLC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2022}
+    \field{labeldatesource}{}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \verb{doi}
+    \verb 10.3102/00346543211052329
+    \endverb
+    \field{number}{3}
+    \field{pages}{413\bibrangedash 454}
+    \field{title}{Multimedia Design for Learning: An Overview of Reviews With
+  Meta-Meta-Analysis}
+    \field{volume}{92}
+    \field{journaltitle}{Review of Educational Research}
+    \field{year}{2022}
+  \endentry
+
+  \entry{roehl2025}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=RS}{%
+         family={R{\"o}hl},
+         familyi={R\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Bijlsma},
+         familyi={B\bibinitperiod},
+         given={Hannah},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schwichow},
+         familyi={S\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{teacherfeedback}
+    \strng{namehash}{RS+1}
+    \strng{fullhash}{RSBHSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2025}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.1007/s11092-024-09450-9
+    \endverb
+    \field{pages}{35\bibrangedash 71}
+    \field{title}{Can Feedback from Students to Teachers Improve Different
+  Dimensions of Teaching Quality in Primary and Secondary Education? A
+  Hierarchical Meta-Analysis}
+    \field{volume}{37}
+    \field{journaltitle}{Educational Assessment, Evaluation and Accountability}
+    \field{year}{2025}
+  \endentry
+
   \entry{10.3389/fpsyg.2019.03087}{article}{}{}
     \name{author}{3}{}{%
       {{hash=WB}{%
@@ -38,6 +328,7 @@
          giveni={J\bibinitperiod},
       }}%
     }
+    \keyw{learningfeedback}
     \strng{namehash}{WB+1}
     \strng{fullhash}{WBZKHJ1}
     \field{labelnamesource}{author}
@@ -74,7 +365,7 @@
     \verb https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsy
     \verb g.2019.03087
     \endverb
-    \field{volume}{Volume 10 - 2019}
+    \field{volume}{10}
     \field{journaltitle}{Frontiers in Psychology}
     \field{year}{2020}
   \endentry
