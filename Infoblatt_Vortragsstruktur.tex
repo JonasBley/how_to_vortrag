@@ -1,0 +1,161 @@
+%% LyX 2.3.6.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,ngerman]{article}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
+\usepackage{array}
+\usepackage{textcomp}
+\usepackage{amssymb}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\@ifundefined{date}{}{\date{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage[colorlinks,
+pdfpagelabels,
+pdfstartview = FitH,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = black,
+plainpages = false,
+hypertexnames = false,
+citecolor = black] {hyperref}
+\usepackage{tikz,pgf,pgfplots}
+\usepackage{mathrsfs,float,multirow}
+\usetikzlibrary{shapes.geometric,patterns,calc,matrix,arrows.meta}
+\hypersetup{urlcolor=myred}
+\setlength{\parindent}{0pt}
+\usepackage{amsthm}
+\usepackage{wrapfig}
+\setlength\parindent{0pt}
+\definecolor{myblue}{RGB}{0,56,101}
+\definecolor{mygreen}{RGB}{106,176,35}
+\definecolor{myred}{RGB}{176,47,44}
+\definecolor{myred2}{RGB}{216,65,63}
+
+%%%%% coloring tables %%%%
+\definecolor{tablegreen}{RGB}{224,239,212}
+\definecolor{tableyellow}{RGB}{255,251,204}
+\definecolor{tablered}{RGB}{252,212,209}
+\usepackage{colortbl,dcolumn}
+\def\zz#1{%
+\ifdim#1pt<0.5pt\cellcolor{tablered}\else
+\ifdim#1pt<1pt\cellcolor{tableyellow}\else
+\cellcolor{tablegreen}\fi\fi
+#1}
+
+%%%% tcolorbox %%%%%%%%
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{breakable}
+\setlength{\intextsep}{2pt}
+\usepackage{pdfpages}
+
+\newtcolorbox{kasten}[2]{
+before skip=15pt,
+after skip=15pt,
+breakable,
+enhanced jigsaw,
+colback=myblue!5!white,
+colframe=myblue,
+colbacktitle=myblue,
+opacityback=0.35,
+attach boxed title to top left={yshift=-2mm},
+fonttitle=\bfseries,
+title=#1
+}
+\pagestyle{empty}
+
+\newtcolorbox{mybox}[2][]{
+enhanced,before skip=15pt,
+after skip=15pt,
+colback=black!5,
+breakable,
+colframe=black!50,
+boxrule=0.2mm,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+boxed title style={frame code={\path[fill=tcbcolback!30!black]([yshift=-1mm,xshift=-1mm]frame.north west)arc[start angle=0,end angle=180,radius=1mm]([yshift=-1mm,xshift=1mm]frame.north east)arc[start angle=180,end angle=0,radius=1mm];\path[left color=tcbcolback!60!black,right color=tcbcolback!60!black,middle color=tcbcolback!80!black]([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)-- (frame.south east) -- (frame.south west)-- ([xshift=-1mm,yshift=-1mm]frame.north west)[sharp corners]-- cycle;},interior engine=empty,},
+fonttitle=\bfseries,
+title={#2},#1}
+
+\numberwithin{table}{section}
+
+\makeatother
+
+\usepackage[font=small,labelfont=bf]{caption}
+%%% Font
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{babel}
+\begin{document}
+\pagenumbering{gobble}
+
+\begin{tikzpicture}
+	\draw[very thick,fill=myred,draw=myred,rounded corners] (-3.7,-.7) rectangle (8.8,.7);
+	\filldraw[myred2] (-1,-.7)--(4,-.7)--(6,.7)--(1,.7)--cycle;
+	\node[align=left,white] at (2,0) {\large Fachdidaktik 1 -- Grundlagen der Physikdidaktik};
+	\filldraw[fill=white,draw=none] (10,-1.8) arc (250:110:2);
+	\node at (11.4,0) {\includegraphics[scale=.07]{../../Uni-L-Logo.png}};
+	
+	\node[align=left] at (-1,-2) {
+		\footnotesize{Prof.~Dr.~Philipp Bitzenbauer}\\
+		\footnotesize{philipp.bitzenbauer@uni-leipzig.de}\\
+		\footnotesize{Vor dem Hospitaltore 1, 1R13}\\
+		\footnotesize{T +49 341 97-32772}
+	};
+	
+	\node[align=left] at (5.5,-2) {
+		\footnotesize{Dr.~Joaquin Veith}\\
+		\footnotesize{joaquin.veith@uni-leipzig.de}\\
+		\footnotesize{Vor dem Hospitaltore 1, 1R18}\\
+		\footnotesize{T +49 341 97-32458}
+	};
+	%\draw (-3.7,-1.7)--(13.9,-1.7);
+\end{tikzpicture}
+\vspace{.5cm}
+\begin{center}\bfseries\Large Informationsblatt zur Vortragsstruktur\end{center}
+\vspace{1cm}
+\small
+Im Modul Fachdidaktik 1 werden ausgewählte Themen der Physikdidaktik mit besonderer Relevanz für die Unterrichtspraxis vertieft. Dazu halten alle Teilnehmenden einen Vortrag. Die Themen und Termine für die Vorträge werden in der ersten Sitzung am 13.10.2025 verteilt. Nachträgliche Änderungen sind nicht möglich. Die ersten Vorträge finden am 10.11.2025 statt.\\
+\\
+Die Vorträge sind von ca. 20 min. Dauer und besitzen folgende Struktur:
+\begin{itemize}
+\item Theoretischer Hintergrund (ca. 10 min.): Aufbereitung des theoretischen Hintergrunds zum jeweiligen Thema, inklusive aktueller Forschungserkenntnisse.
+\item Relevanz für die Unterrichtspraxis (ca. 10 min.): Herausarbeiten von Implikationen der theoretischen Fundierung und aktueller Forschungserkenntnisse für die Unterrichtspraxis.
+\end{itemize}
+
+Das grobe Einhalten der Vortragszeiten und -struktur ist Teil der Aufgabe. In ihren inhaltlichen Schwerpunkten und damit ihrem Aufbau unterscheiden sich die Vorträge je nach Thema. Die Referierenden besitzen die Freiheit, inhaltliche Schwerpunkte nach persönlichen Interessen zu setzen. Wichtig ist jedoch, dass zentrale Begriffe geklärt werden und wichtige theoretische Grundlagen vermittelt werden. Die Eigenleistung findet im zweiten Teil des Vortrags statt, wenn sie stichhaltig die Relevanz des Themas für den späteren Lehrberuf darlegen.\\
+\\
+Die Gestaltung des Vortrags beginnt daher stets mit einer ausführlichen Literaturrecherche. Dazu bieten sich je nach Thema sowohl Lehrbücher der Physikdidaktik (z.B. \href{https://doi.org/10.1007/978-3-642-41745-0}{Physikdidaktik. Theorie und Praxis von Kircher, Girwidz und Häußler, 2015} oder \href{https://www.friedrich-verlag.de/shop/physikdidaktik-kompakt-62784}{Physikdidaktik kompakt von Wiesner, Schecker und Hopf, 2014}) als auch Artikel aus wissenschaftlichen Zeitschriften an. Zum Start für Ihre Recherchen ist in der Zeitschiene im Moodle-Kurs, in der tabellarisch alle Themen und Daten des Moduls aufgeschlüsselt sind, zu jedem Thema ein besonders zentraler Fachartikel per Hyperlink hinterlegt. Empfehlenswert ist darüber hinaus ein Blick in wissenschaftliche Zeitschriften, insbesondere für den Einbezug aktueller Erkenntnisse. Eine Suche nach Artikeln in folgenden Zeitschriften kann besonders lohnenswert sein (Suchfunktion nutzen):
+\begin{itemize}
+	\item \href{https://www.tandfonline.com/journals/tsed20}{International Journal of Science Education}
+	\item \href{https://journals.aps.org/prper/}{Physical Review Physics Education Research}
+	\item \href{https://www.springer.com/journal/10763}{International Journal of Science and Mathematics Education}
+	\item \href{https://iopscience.iop.org/journal/0031-9120}{Physics Education}
+	\item \href{https://www.ejmste.com/}{Eurasia Journal of Mathematics, Science and Technology Education}
+	\item \href{https://www.springer.com/journal/11165}{Research in Science Education}
+\end{itemize}
+
+Zur medialen Unterstützung der Vorträge gibt es keine Vorgaben. Ein guter Vortrag wird verstanden als eine Bereicherung für alle Teilnehmenden und für die Referierenden selbst:
+\begin{itemize}
+	\item Eine innovative Vortragsgestaltung,
+	\item das Präsentieren eines theoretischen Hintergrunds zum Thema, der eine
+	substanzielle Erweiterung der Vorlesung Fachdidaktik 1 darstellt und
+	\item eine gut argumentierte Relevanz des Themas für den Physikunterricht
+\end{itemize}
+sind dabei entscheidender als das Abhaken formaler Vorgaben.\\
+\\
+Zur Prüfungsvorleistung im Modul Fachdidaktik 1 gehört eine schriftliche Ausarbeitung des Vortrags. Diese entspricht einem Handout, das die Vortragsinhalte auf einer bis zwei DIN A4 Seiten zusammenfasst. Das Handout entspricht also einer übersichtlichen und einheitlichen Zusammenfassung der wesentlichen Inhalte und soll einerseits für die Vorbereitung zur Modulprüfung sowie andererseits für die spätere Unterrichtspraxis unterstützend wirken.\\
+\\
+Eine PDF der Vortragspräsentation und des Handouts sind bis spätestens zwei Tage vor Vortrag in den dafür vorgesehenen Abgabemodulen im Moodlekurs hochzuladen. Jedem Vortrag folgt eine ca. 10 minütige Diskussion im Plenum, in der offene Fragen und kritische Anmerkungen besprochen werden können.\\
+\\
+{\bf Wichtig:} Die Vorträge sind vorab mit den Dozierenden zu besprechen. Buchen Sie dazu bis spätestens eine Woche vor Ihrem Termin einen Zeitslot über \href{https://cal.meetergo.com/joaquin-veith/30-min-meeting-or-joaquin-veith}{diesen Link} (nur Joaquin Veith). Wir werden dann gemeinsam in Präsenz (in 1R18 bei Joaquin Veith und 1R22 für Fabian Hennig) Ihren Vortrag besprechen. Schicken Sie dazu Ihren Foliensatz und ihr Handout vorab via Mail.
+
+\end{document}
