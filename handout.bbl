@@ -177,6 +177,27 @@
     \field{year}{2022}
   \endentry
 
+  \entry{projectzeroLadder}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=P}{%
+         family={{Project Zero}},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \keyw{feedbackmethod}
+    \strng{namehash}{P1}
+    \strng{fullhash}{P1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labeldatesource}{nodate}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{howpublished}{Harvard Graduate School of Education}
+    \field{note}{Nach David Perkins (2003). Methodenblatt:
+  \url{https://pz.harvard.edu/sites/default/files/2024-10/Ladder\%20of\%20Feedback\%202019.pdf}}
+    \field{title}{The Ladder of Feedback}
+  \endentry
+
   \entry{roehl2025}{article}{}{}
     \name{author}{3}{}{%
       {{hash=RS}{%
@@ -217,6 +238,72 @@
     \field{volume}{37}
     \field{journaltitle}{Educational Assessment, Evaluation and Accountability}
     \field{year}{2025}
+  \endentry
+
+  \entry{sargeant2017}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=SJ}{%
+         family={Sargeant},
+         familyi={S\bibinitperiod},
+         given={Joan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mann},
+         familyi={M\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Manos},
+         familyi={M\bibinitperiod},
+         given={Sarah},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=EI}{%
+         family={Epstein},
+         familyi={E\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Warren},
+         familyi={W\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Shearer},
+         familyi={S\bibinitperiod},
+         given={Cindy},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Boudreau},
+         familyi={B\bibinitperiod},
+         given={Michelle},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{feedbackmethod}
+    \strng{namehash}{SJ+1}
+    \strng{fullhash}{SJMKMSEIWASCBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.4300/JGME-D-16-00398.1
+    \endverb
+    \field{number}{2}
+    \field{pages}{165\bibrangedash 170}
+    \field{title}{{R2C2} in Action: Testing an Evidence-Based Model to
+  Facilitate Feedback and Coaching in Residency}
+    \field{volume}{9}
+    \field{journaltitle}{Journal of Graduate Medical Education}
+    \field{year}{2017}
   \endentry
 
   \entry{10.3389/fpsyg.2019.03087}{article}{}{}
@@ -280,6 +367,35 @@
     \field{volume}{10}
     \field{journaltitle}{Frontiers in Psychology}
     \field{year}{2020}
+  \endentry
+
+  \entry{yates2002}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=YJ}{%
+         family={Yates},
+         familyi={Y\bibinitperiod},
+         given={Joanne},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{presentation}
+    \strng{namehash}{YJ1}
+    \strng{fullhash}{YJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{howpublished}{MIT OpenCourseWare, 15.289 Communication Skills for
+  Academics, Spring 2002}
+  \field{note}{\href{https://ocw.mit.edu/courses/15-289-communication-skills-for-academics-spring-2002/4c878edf593ac37ab28c98d44cc4667a_289presentation.pdf}{Vorlesungsfolien}}
+    \field{title}{Giving Oral Presentations}
+    \verb{url}
+    \verb https://ocw.mit.edu/courses/15-289-communication-skills-for-academics
+    \verb -spring-2002/4c878edf593ac37ab28c98d44cc4667a_289presentation.pdf
+    \endverb
+    \field{year}{2002}
   \endentry
 \enddatalist
 \endinput
