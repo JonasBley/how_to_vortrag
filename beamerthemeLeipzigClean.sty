@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{beamerthemeLeipzigClean}[2026/10/06 Clean Leipzig presentation theme]
+\ProvidesPackage{beamerthemeLeipzigClean}[2026/10/14 Clean Leipzig presentation theme]
 
 % Adapted from the supplied LeipzigChemie and LeipzigModern styles.
 % Requires XeLaTeX or LuaLaTeX. Standard TeX fonts provide a portable fallback.
@@ -41,6 +41,7 @@
 \setbeamercolor{itemize item}{fg=LeipzigBlue}
 \setbeamercolor{itemize subitem}{fg=LeipzigBlue}
 \setbeamercolor{itemize subsubitem}{fg=LeipzigBlue}
+\setbeamercolor{itemize subsubitem}{fg=LeipzigBlue}
 \setbeamercolor{enumerate item}{fg=LeipzigBlue}
 \setbeamercolor{section in toc}{fg=LeipzigBlue}
 \setbeamerfont{title}{size=\LARGE,series=\bfseries}
@@ -54,6 +55,14 @@
 \setbeamertemplate{background}{}
 \setbeamertemplate{blocks}[default]
 \setbeamertemplate{frametitle}{\vspace{3mm}\insertframetitle\par\vspace{2mm}}
+% Same round text bullet and blue as in the handout, on all nesting levels.
+% No fixed small/tiny size: the marker follows the current label font.
+\setbeamerfont{itemize item}{series=\mdseries}
+\setbeamerfont{itemize subitem}{series=\mdseries}
+\setbeamerfont{itemize subsubitem}{series=\mdseries}
+\setbeamertemplate{itemize item}{\textbullet}
+\setbeamertemplate{itemize subitem}{\textbullet}
+\setbeamertemplate{itemize subsubitem}{\textbullet}
 % Same round text bullet and blue as in the handout, on all nesting levels.
 % No fixed small/tiny size: the marker follows the current label font.
 \setbeamerfont{itemize item}{series=\mdseries}
@@ -95,6 +104,14 @@
 \newcommand{\keyidea}[1]{\par\vspace{2mm}{\centering\normalsize\bfseries\color{LeipzigBlue}#1\par}}
 \newcommand{\keyalert}[1]{\par\vspace{2mm}{\centering\normalsize\bfseries\color{karneol}#1\par}}
 \newcommand{\ket}[1]{\lvert #1\rangle}
+\newcommand{\redrow}[2]{%
+  \par\noindent
+  \begin{minipage}[t]{2.7cm}\vspace{0pt}%
+    \raggedright\color{granat}\bfseries\strut #1\par
+  \end{minipage}\hspace{5mm}%
+  \begin{minipage}[t]{\dimexpr\textwidth-3.2cm\relax}\vspace{0pt}%
+    \raggedright\strut #2\par
+  \end{minipage}\par\vspace{2.5mm}}
 \newtcolorbox{mynote}[1][Note]{colback=white,colbacktitle=aquamarin,
   coltitle=basalt,colframe=aquamarin,boxrule=.6pt,arc=1mm,
   fonttitle=\bfseries,title={\strut#1},left=2mm,right=2mm,top=1.5mm,bottom=1.5mm}
@@ -151,12 +168,106 @@
 \end{frame}
 }}
 
+% Informal title / discussion opener, based on the supplied reference image.
+% Usage: \makeinformaltitle[Optional subtitle]{Your title}
+% All artwork remains editable TikZ. Existing slide styles stay unchanged.
+\definecolor{InformalPale}{HTML}{E6F2F4}
+\definecolor{InformalAqua}{HTML}{B8DCE1}
+\definecolor{InformalLight}{HTML}{CFE7EB}
+\definecolor{InformalDeep}{HTML}{ADD3DB}
+\definecolor{InformalRed}{HTML}{E3210C}
+\definecolor{InformalCoral}{HTML}{E96D57}
+\setbeamerfont{informal title}{family=\sffamily,series=\bfseries,size=\fontsize{15.5}{19}}
+\setbeamerfont{informal subtitle}{family=\sffamily,series=\mdseries,size=\large}
+\newcommand{\informaltitlebackground}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \begin{scope}[shift={(current page.north west)},x=\paperwidth,y=-\paperheight]
+      \clip (0,0) rectangle (1,1);
+      \fill[white] (0,0) rectangle (1,1);
+      % Pale header and interlocking triangles along the left edge.
+      \fill[InformalPale!55!white] (0,0) -- (.42,0) -- (.477,.212) -- (0,.212) -- cycle;
+      \fill[InformalPale] (0,.21) -- (.105,.21) -- (0,.61) -- cycle;
+      \fill[InformalLight] (0,.21) -- (.225,.21) -- (0,.398) -- cycle;
+      % Large translucent-looking facets on the right; solid pale fills print reliably.
+      \fill[InformalLight] (.42,0) -- (1,0) -- (1,1) -- (.69,1) -- cycle;
+      \fill[InformalAqua] (.42,0) -- (.62,0) -- (.835,.182) -- (.535,.431) -- cycle;
+      \fill[InformalPale!70!InformalLight] (.814,0) -- (.895,0) -- (.853,.164) -- cycle;
+      \fill[InformalPale!55!InformalLight] (1,.043) -- (1,.315) -- (.853,.164) -- cycle;
+      \fill[InformalDeep] (.853,.164) -- (1,.736) -- (.747,.567) -- cycle;
+      \fill[InformalAqua] (.747,.567) -- (1,.736) -- (1,1) -- (.634,1) -- cycle;
+      \fill[InformalDeep] (.634,1) -- (.663,.892) -- (.69,1) -- cycle;
+      % Red corner accents echo the original slide without a screenshot border.
+      \fill[granat] (1,.462) -- (1,1) -- (.86,1) -- cycle;
+      \fill[InformalCoral] (.80,1) -- (1,.835) -- (1,1) -- cycle;
+      \fill[InformalRed] (.86,1) -- (.877,.938) -- (1,.835) -- (1,1) -- cycle;
+    \end{scope}
+  \end{tikzpicture}%
+}
+% Shared renderer for the title-only command and the informal content slide.
+\newdimen\Leipzig@informalcontenttop
+\newdimen\Leipzig@informalbottomspace
+\newcommand{\Leipzig@informalslide}[3]{%
+  \begingroup
+    \setbeamertemplate{background}{\informaltitlebackground}
+    \setbeamertemplate{headline}{}
+    \setbeamertemplate{footline}{}
+    \begin{frame}[plain,noframenumbering]
+      \begin{tikzpicture}[remember picture,overlay]
+        \begin{scope}[shift={(current page.north west)},x=\paperwidth,y=-\paperheight]
+          % The source PDF contains whitespace. Trim only that padding,
+          % leaving the original seal and wordmark intact and proportional.
+          \node[anchor=north west,inner sep=0pt] at (.03,.04)
+            {\includegraphics[width=.23\paperwidth,trim={28bp 24bp 15bp 27bp},clip]{\presentationlogo}};
+          % Inset the heading into the white area, aligned with the body.
+          \node[anchor=north west,inner sep=0pt,outer sep=0pt,align=left,text=black,
+            text width=.43\paperwidth] (leipziginformalheading) at (.08,.38) {%
+              \usebeamerfont{informal title}\raggedright #2\par
+              \ifstrempty{#1}{}{\vspace{3mm}{\usebeamerfont{informal subtitle}\color{LeipzigBlue}#1\par}}};
+        \end{scope}
+        \ifstrempty{#3}{}{%
+          % Start beneath both the left facets and the actual heading height.
+          \pgfextracty{\Leipzig@informalcontenttop}{\pgfpointdiff
+            {\pgfpointanchor{leipziginformalheading}{south west}}
+            {\pgfpointanchor{current page}{north west}}}%
+          \advance\Leipzig@informalcontenttop by 4mm
+          \ifdim\Leipzig@informalcontenttop<.42\paperheight
+            \Leipzig@informalcontenttop=.42\paperheight
+          \fi
+          \node[anchor=north west,inner sep=0pt,outer sep=0pt,text=Ink]
+            (leipziginformalcontent) at
+            ([xshift=.08\paperwidth,yshift=-\Leipzig@informalcontenttop]current page.north west) {%
+              \begin{minipage}{.43\paperwidth}
+                \normalfont\normalsize\raggedright
+                #3\par
+              \end{minipage}};
+          \pgfextracty{\Leipzig@informalbottomspace}{\pgfpointdiff
+            {\pgfpointanchor{current page}{south west}}
+            {\pgfpointanchor{leipziginformalcontent}{south west}}}%
+          \ifdim\Leipzig@informalbottomspace<.05\paperheight
+            \PackageWarning{beamerthemeLeipzigClean}{Informal slide content
+              exceeds the bottom margin. Shorten the content or reduce image height}%
+          \fi
+        }%
+      \end{tikzpicture}
+    \end{frame}
+  \endgroup
+}
+\newcommand{\makeinformaltitle}[2][]{\Leipzig@informalslide{#1}{#2}{}}
+% Use outside a frame, like \makeinformaltitle. Ordinary LaTeX content is
+% collected into the white-area minipage; \linewidth is its usable width.
+\NewDocumentEnvironment{informalslide}{O{} m +b}
+  {\Leipzig@informalslide{#1}{#2}{#3}}{}
+
 
 \providecommand{\BeamerAspectRatio}{169}
 \newcommand{\definepagelayoutwithAR}{%
   \ifnum\BeamerAspectRatio=169\relax\SpecialPageLayout\else\specialpagelayout\fi}
 \newcommand{\maketableofcontents}{%
-  \begin{frame}{Overview}\tableofcontents[hideallsubsections]\end{frame}}
+  \Leipzig@informalslide{}{Overview}{%
+    % Reduce Beamer's section gap locally, only on the overview slide.
+    \patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip.2em}{}%
+      {\PackageWarning{beamerthemeLeipzigClean}{Could not reduce overview entry spacing}}%
+    \tableofcontents[hideallsubsections]}}
 \newcommand{\makesectionpopup}{\AtBeginSection[]{%
   {\definepagelayoutwithAR\setbeamertemplate{footline}{}
     \begin{frame}[plain,noframenumbering]

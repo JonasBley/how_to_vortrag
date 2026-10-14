@@ -1,0 +1,19 @@
+% Reflection diagram from foliendesign.tikz, without the surrounding sample slide.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\sffamily]
+  \useasboundingbox (5.15,.15) rectangle (11.7,5.4);
+  \fill[aquamarin!20] (5.4,1.75) rectangle (11.45,1.97);
+  \draw[Ink,line width=1.2pt] (5.4,1.97)--(11.45,1.97);
+  \draw[dashed,Muted,line width=.8pt] (8.4,1.97)--(8.4,4.9);
+  \node[anchor=south,font=\sffamily\small,text=Muted] at (8.4,4.95) {Lot};
+  \draw[->,granat,line width=1.8pt,>=stealth] (5.9,4.47)--(8.4,1.97);
+  \draw[->,LeipzigBlue,line width=1.8pt,>=stealth] (8.4,1.97)--(10.9,4.47);
+  \draw[granat,line width=.9pt] (8.4,2.95) arc[start angle=90,end angle=135,radius=.98];
+  \draw[LeipzigBlue,line width=.9pt] (9.093,2.663) arc[start angle=45,end angle=90,radius=.98];
+  \node[text=granat,font=\large] at (7.91,3.23) {$\alpha$};
+  \node[text=LeipzigBlue,font=\large] at (8.89,3.23) {$\beta$};
+  \node[anchor=south east,font=\sffamily\small,text=granat] at (7.0,4.5) {einfallend};
+  \node[anchor=south west,font=\sffamily\small,text=LeipzigBlue] at (9.8,4.5) {reflektiert};
+  \node[anchor=north east,font=\sffamily\small,text=Muted] at (11.45,1.55) {ebener Spiegel};
+  \node[font=\Large,text=Ink] at (8.4,.55)
+    {$\textcolor{granat}{\bm{\alpha}}\;\bm{=}\;\textcolor{LeipzigBlue}{\bm{\beta}}$};
+\end{tikzpicture}

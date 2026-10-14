@@ -19,70 +19,86 @@
 \section{Strategie formulieren}
 
 \begin{frame}{Strategie formulieren: Überblick}
-Ihr kennt das bestimmt: Man muss einen Vortrag halten und weiß nicht, wo man anfangen soll.
+\only<1->{Ihr kennt das bestimmt: Man muss einen Vortrag halten und weiß nicht, wo man anfangen soll.}
 
-\keyidea{Die Planung sollte im Kontext das Wechselspiel zwischen Zielgruppe, Zielsetzung und Umsetzung berücksichtigen.}
+\only<2->{\keyidea{Die Planung sollte im Kontext das Wechselspiel zwischen Zielgruppe, Zielsetzung und Umsetzung berücksichtigen.}}
 
 \centering
-\includegraphics[width=\linewidth,height=.57\textheight,keepaspectratio]{images/kontext_1.png}
-
+\only<3->{\includegraphics[width=\linewidth,height=.57\textheight,keepaspectratio]{images/kontext_1.png}}
+\slidesource{Yates (2002), MIT OpenCourseWare}
+\note{Nach Yates (2002), Giving Oral Presentations, PDF-S. 2:
+Analyzing the Situation. Kurs 15.289, Communication Skills for Academics,
+MIT OpenCourseWare, Frühjahr 2002.}
 \end{frame}
 \begin{frame}{Strategie formulieren: Kommunikation}
 \footnotesize
 Bzgl. der Kommunikationsstrategie ergeben sich folgende Fragen:
 \begin{itemize}
-  \item Wieviel Literatur muss ich lesen, in welchem Detailgrad soll ich davon berichten?
-  \item In welchem technischen Stil soll ich davon berichten?
-  \item Mit welcher Struktur?
-  \item Balance zwischen Kognitiver Belastung und Erwartungen der Zuhörer*innen.
+  \item<1-> Wieviel Literatur muss ich lesen, in welchem Detailgrad soll ich davon berichten?
+  \item<2-> In welchem technischen Stil soll ich davon berichten?
+  \item<3-> Mit welcher Struktur?
+  \item<4-> Balance zwischen Kognitiver Belastung und Erwartungen der Zuhörer*innen.
 \end{itemize}
 \centering
-\includegraphics[width=\linewidth,height=.53\textheight,keepaspectratio]{images/kontext.png}
+\only<4->{\includegraphics[width=\linewidth,height=.53\textheight,keepaspectratio]{images/kontext.png}}
+\slidesource{Yates (2002), MIT OpenCourseWare}
+\note{Nach Yates (2002), Giving Oral Presentations, PDF-S. 3--5:
+Kommunikationsstrategie und Abwägung zwischen kognitiver Verarbeitung
+und Erwartungen des Publikums.}
 \end{frame}
 
 \begin{frame}{Planung der Vortragsstruktur}
 \begin{columns}[T,onlytextwidth]
   \column{.3\textwidth}
+  \only<1->{
   \begin{myalert}[1 · Einstieg]
     Interesse wecken\\
     Vorwissen aktivieren\\
     Ziel und Ablauf klären
   \end{myalert}
+  }
 
   \column{.36\textwidth}
+  \only<2->{
   \begin{mynote}[2 · Kernteil]
     Wenige klare Kernbotschaften\\
     Mit Beispielen und Bildern erklären\\
     Tiefe an die Zielgruppe anpassen\\
     Dem roten Faden folgen
   \end{mynote}
+  }
 
   \column{.3\textwidth}
+  \only<3->{
   \begin{myalert}[3 · Schluss]
     Kernaussagen wiederholen\\
     Offene Fragen benennen\\
     Fazit und Ausblick geben
   \end{myalert}
+  }
 \end{columns}
+\slidesource{Yates (2002), MIT OpenCourseWare}
+\note{Adaptiert nach Yates (2002), Giving Oral Presentations, PDF-S. 6:
+Planning Segments of Presentation.}
 \end{frame}
 
 \section{Design, Visualisierungen und Hilfsmittel}
 
 \begin{frame}{Foliendesign}
-\keyidea{Eine klare Aussage und eine passende Abbildung erleichtern die Orientierung.}
+\only<1->{\keyidea{Eine klare Aussage und eine passende Abbildung erleichtern die Orientierung.}}
 \vspace{2mm}
 \begin{columns}[c,onlytextwidth]
   \column{.34\textwidth}
   \small
   \begin{itemize}
-    \item Text auf das Wesentliche kürzen.
-    \item Beschriftungen nahe am Bild platzieren.
-    \item Kontraste und Freiraum nutzen.
-    \item Lesbarkeit aus der letzten Reihe prüfen.
+    \item<2-> Text auf das Wesentliche kürzen.
+    \item<3-> Beschriftungen nahe am Bild platzieren.
+    \item<4-> Kontraste und Freiraum nutzen.
+    \item<5-> Lesbarkeit aus der letzten Reihe prüfen.
   \end{itemize}
   \column{.63\textwidth}
   \centering
-  \resizebox{\linewidth}{!}{\input{images/foliendesign.tikz}}
+  \only<1->{\resizebox{\linewidth}{!}{\input{images/foliendesign.tikz}}}
 \end{columns}
 \slidesource{Noetel et al. (2022)}
 \note{Die Abbildung zeigt ein editierbares Layoutbeispiel, keine empirischen Daten.
@@ -95,15 +111,22 @@ Für lernbezogene Gestaltungsprinzipien siehe \cite{noetel2022}.}
 
 \begin{frame}{Visualisierungen}
 
-\keyalert{Was meint ihr: was macht eine gute Visualisierung aus?}
+\only<1->{\keyalert{Was meint ihr: was macht eine gute Visualisierung aus?}}
 
 \vspace{3mm}
-\begin{itemize}
-  \item \textbf{Kohärenz:} Unnötige Details und dekorative Bilder weglassen.
-  \item \textbf{Signalisierung:} Den entscheidenden Zusammenhang hervorheben.
-  \item \textbf{Räumliche Nähe:} Bild und zugehörige Beschriftung zusammen zeigen.
-  \item \textbf{Dosierung:} Komplexe Erklärungen in nachvollziehbare Schritte teilen.
-\end{itemize}
+\begin{columns}[c,onlytextwidth]
+  \column{.51\textwidth}
+  \small
+  \begin{itemize}
+    \item<3-> \textbf{Kohärenz:} Unnötige Details und dekorative Bilder weglassen.
+    \item<4-> \textbf{Signalisierung:} Den entscheidenden Zusammenhang hervorheben.
+    \item<5-> \textbf{Räumliche Nähe:} Bild und zugehörige Beschriftung zusammen zeigen.
+    \item<6-> \textbf{Dosierung:} Komplexe Erklärungen in nachvollziehbare Schritte teilen.
+  \end{itemize}
+  \column{.46\textwidth}
+  \centering
+  \only<2->{\resizebox{\linewidth}{!}{\input{images/reflexion.tikz}}}
+\end{columns}
 \slidesource{Noetel et al. (2022); Fiorella \& Mayer (2021)}
 \note{\cite{noetel2022,fiorella2021}. Die Evidenz betrifft überwiegend Lernen mit
 multimedialen Materialien. Daraus folgt kein universelles Rezept für jede Rede.
@@ -116,17 +139,17 @@ sprachliche Voraussetzungen bei der Entscheidung über sichtbaren Text berücksi
   \column{.43\textwidth}
   \small
   \begin{itemize}
-    \item Folien, Handouts, Flipcharts, Whiteboards, Overheadprojektoren
-    \item Modelle, Anschauungsmaterial, Experimente
-    \item Videos, Animationen, Simulationen
-    \item Quizze, Umfragen, Abstimmungen: Lernen während des Vortrags.
+    \item<1-> Folien, Handouts, Flipcharts, Whiteboards, Overheadprojektoren
+    \item<2-> Modelle, Anschauungsmaterial, Experimente
+    \item<3-> Videos, Animationen, Simulationen
+    \item<4-> Quizze, Umfragen, Abstimmungen: Lernen während des Vortrags.
   \end{itemize}
   \column{.54\textwidth}
   \centering
   \includegraphics[width=\linewidth]{images/hilfsmittel-icons.png}
 \end{columns}
 \vspace{4mm}
-\keyidea{Was können die Zuhörenden damit besser verstehen oder selbst erarbeiten?}
+\only<5->{\keyidea{Was können die Zuhörenden damit besser verstehen oder selbst erarbeiten?}}
 \note{Iconübersicht: Folien, Handout, Flipchart, Modell, Experiment, Video,
 Simulation und Umfrage. KI-generierte Illustration mit dem integrierten Bildwerkzeug,
 7. Oktober 2026. Die Bildzeichen dienen der Zuordnung der Beispiele.}
@@ -134,26 +157,31 @@ Simulation und Umfrage. KI-generierte Illustration mit dem integrierten Bildwerk
 
 \section{Mündliche Präsentationen halten}
 \begin{frame}{Mündliche Präsentationen halten}
-\keyidea{Du bist die Präsentation, nicht die Folien.}
+\only<1->{\keyidea{Du bist die Präsentation, nicht die Folien.}}
 \vspace{3mm}
 \footnotesize
-Natürliche und effektive Kommunikation bedeutet ...
-
+\only<2->{Natürliche und effektive Kommunikation bedeutet ...}
+\only<2->{
 \begin{mynote}[... Verbal]
   \begin{itemize}
-    \item die Inhalte klar und verständlich zu vermitteln,
-    \item die Aufmerksamkeit der Zuhörer*innen zu halten,
-    \item die Botschaften zu betonen und zu verstärken.
+    \item<2-> die Inhalte klar und verständlich zu vermitteln,
+    \item<3-> die Aufmerksamkeit der Zuhörer*innen zu halten,
+    \item<4-> die Botschaften zu betonen und zu verstärken.
   \end{itemize}
 \end{mynote}
-
+}
+\only<5->{
 \begin{mynote}[... Nonverbal]
   \begin{itemize}
-    \item Körpersprache, Gestik, Mimik und Blickkontakt bewusst einsetzen,
-    \item Stimme, Lautstärke, Sprechtempo und Pausen variieren,
-    \item Raum und Hilfsmittel effektiv nutzen.
+    \item<5-> Körpersprache, Gestik, Mimik und Blickkontakt bewusst einsetzen,
+    \item<6-> Stimme, Lautstärke, Sprechtempo und Pausen variieren,
+    \item<7-> Raum und Hilfsmittel effektiv nutzen.
   \end{itemize}
 \end{mynote}
+}
+\slidesource{Yates (2002), MIT OpenCourseWare}
+\note{Adaptiert nach Yates (2002), Giving Oral Presentations, PDF-S. 11--12:
+Die vortragende Person als Mittelpunkt sowie verbale und nonverbale Gestaltung.}
 \end{frame}
 
 \section{Beispiel aus der Optik}
@@ -162,7 +190,7 @@ Natürliche und effektive Kommunikation bedeutet ...
   \centering
   \keyalert{Plant einen Vortrag zum Thema Optik anhand des Handouts für eure Mitstudierenden.}
   \begin{columns}
-    \column{0.5\textwidth}
+    \column{0.6\textwidth}
     Überlegt euch
     \begin{itemize}
     \item Ziel und Struktur des Vortrags,
@@ -170,26 +198,26 @@ Natürliche und effektive Kommunikation bedeutet ...
     \item Visualisierung, die die Kernbotschaften oder einen Teil davon unterstützt,
     \item Methoden und Materialien, die ihr einsetzen würdet.
     \end{itemize}
-    \column{0.5\textwidth}
-    \includegraphics[width=0.6\textwidth]{images/optik_handout.png}
+    \column{0.4\textwidth}
+    \includegraphics[width=0.8\textwidth]{images/optik_handout.png}
   \end{columns}
 
 \end{frame}
 
 \section{Feedback im Lehrberuf}
 \begin{frame}{Relevanz von Feedback für den Lehrberuf}
-\keyidea{Feedback kann Lernen unterstützen. Sein Informationsgehalt ist entscheidend.}
+\only<1->{\keyidea{Feedback kann Lernen unterstützen. Sein Informationsgehalt ist entscheidend.}}
 \vspace{4mm}
-435 Studien zeigen im Mittel $d=0{,}48$ \citep{10.3389/fpsyg.2019.03087}
+\only<2->{435 Studien zeigen im Mittel $d=0{,}48$ \citep{10.3389/fpsyg.2019.03087} für den Lernerfolg}
 \vspace{4mm}
 
-23 Studien: kleine mittlere Verbesserung der Unterrichtsqualität $d=0{,}27$ \citep{roehl2025}
+\only<3->{23 Studien: kleine mittlere Verbesserung der Unterrichtsqualität $d=0{,}27$ \citep{roehl2025}}
 
-Größere Effekte bei 
+\only<4->{Größere Effekte bei }
 \begin{itemize}
-  \item Unterstützung der Interpretation,
-  \item Dialog mit der Klasse,
-  \item Möglichkeit, Feedback umzusetzen. 
+  \item<4-> Unterstützung der Interpretation (intrinsische Motivation, positive Ermutigung),
+  \item<5-> Dialog mit der Klasse (z.B. Fragen stellen zu einzelnen Aspekten),
+  \item<6-> Möglichkeit, Feedback umzusetzen. 
 \end{itemize}
 
 % \source{$d$ bezeichnet eine standardisierte Effektgröße, keinen prozentualen Lernzuwachs.}
@@ -204,15 +232,15 @@ kein garantierter Effekt. Brandmo und Gamlem betrachten 96 Studien zu 10- bis
 \end{frame}
 
 \begin{frame}{Feedback geben}
-\keyidea{Feedback sollte informativ, zugeschnitten, und handlungsorientiert sein \citep{brandmo2025}. }
+\only<1->{\keyidea{Feedback sollte informativ, zugeschnitten, und handlungsorientiert sein \citep{brandmo2025}. }}
 \vspace{3mm}
 
 \begin{itemize}
-  \item Beobachten, nicht bewerten, zum Beispiel \glqq Auf Folie X hast du das Thema von Argument Y bis zu Argument Z aufgearbeitet\grqq.
-  \item Wirkung auf die eigene Person beschreiben, zum Beispiel \glqq Für mich war das schwer verständlich, schwierig nachzuvollziehen\grqq.
-  \item Handlungsorientiert sein, zum Beispiel \glqq Du könntest das Argument Z noch mit einem Beispiel untermauern  oder die Argumentation mit einem Flussdiagramm beschreiben\grqq.
-  \item Negativität und Schwammigkeit vermeiden.
-  \item Bereit sein, Rückfragen zu beantworten.
+  \item<2-> Beobachten, nicht bewerten, zum Beispiel \glqq Auf Folie X hast du das Thema von Argument Y bis zu Argument Z aufgearbeitet\grqq.
+  \item<3-> Wirkung auf die eigene Person beschreiben, zum Beispiel \glqq Für mich war das schwer verständlich, schwierig nachzuvollziehen\grqq.
+  \item<4-> Handlungsorientiert sein, zum Beispiel \glqq Du könntest das Argument Z noch mit einem Beispiel untermauern  oder die Argumentation mit einem Flussdiagramm beschreiben\grqq.
+  \item<5-> Negativität und Schwammigkeit vermeiden.
+  \item<6-> Bereit sein, Rückfragen zu beantworten.
 \end{itemize}
 
 % \slidesource{Wisniewski et al. (2020); Brandmo \& Gamlem (2025)}
@@ -222,16 +250,17 @@ nicht für jede Aufgabe grundsätzlich besser als verzögertes Feedback.}
 \end{frame}
 
 \begin{frame}{Feedback annehmen}
-\keyidea{Feedback nutzen heißt verstehen, abwägen und eine Verbesserung erproben.}
+\only<1->{\keyidea{Feedback nutzen heißt verstehen, abwägen und eine Verbesserung erproben.}}
 \vspace{3mm}
 \begin{itemize}
-  \item \textbf{Aktiv Zuhören:} Die Rückmeldung zunächst vollständig aufnehmen und zum Beispiel paraphrasieren.
-  \item \textbf{Nachfragen:} Zum Beispiel um ein konkretes Beispiel oder die zugrunde liegenden Schwierigkeiten genauer erfragen.
-  \item \textbf{Abwägen:} Die Rückmeldung mit dem Lernziel und der eigenen Beobachtung vergleichen.
-  \item \textbf{Umsetzen:} Mögliche nächste Schritte beschreiben und Rückmeldung dazu einholen.
+  \item<2-> \textbf{Bedanken:} Feedback als Geschenk wahrnehmen.
+  \item<3-> \textbf{Aktiv Zuhören:} Die Rückmeldung zunächst vollständig aufnehmen und zum Beispiel paraphrasieren.
+  \item<4-> \textbf{Nachfragen:} Zum Beispiel um ein konkretes Beispiel oder die zugrunde liegenden Schwierigkeiten genauer erfragen.
+  \item<5-> \textbf{Abwägen:} Die Rückmeldung mit dem Lernziel und der eigenen Beobachtung vergleichen.
+  \item<6-> \textbf{Umsetzen:} Mögliche nächste Schritte beschreiben und Rückmeldung dazu einholen.
 \end{itemize}
 
-\keyalert{Wir probieren es aus: Findet euch mit einem anderen Paar zusammen, zeigt euren Plan zum Optikvortrag und lasst euch Feedback geben.}
+\only<7->{\keyalert{Wir probieren es aus: Findet euch mit einem anderen Paar zusammen, stellt euren Plan zum Optikvortrag kurz vor und lasst euch Feedback geben.}}
 
 \note{Die Regeln sind eine praktische Ableitung aus der Forschung zur
 Feedbackaufnahme \cite{brandmo2025}, kein empirisch geprüftes Regelpaket.}
@@ -252,6 +281,11 @@ ich den Daumen drauf“ (Alternativ: Thumbs up – „das fand ich super“)
 \item Kleiner Finger: „Folgendes ist mir zu kurz gekommen…“
 \end{itemize}
 \end{mynote}
+\slidesource{Deutsche Schülerakademien (2016); weiterführend: Meyer et al. (2018)}
+\note{5-Finger-Feedback: Methodensammlung der Deutschen Schülerakademien,
+internes Dokument, Stand 2016. Quellenzuordnung nach Angabe des Vortragenden.
+Meyer et al. (2018) wird hier als weiterführende Methodensammlung angeführt,
+nicht als Beleg für das 5-Finger-Feedback.}
 \end{frame}
 
 \begin{frame}{Feedbackmethoden 2}
@@ -270,7 +304,10 @@ Regeln: Kurz (ca. 2-3 Sätze); Konkret; kein Kommentar/keine Diskussion
 \begin{mynote}[Mentimeter]
 Feedback kann auch digital über Mentimeter gesammelt werden. Die SuS geben ihre Rückmeldungen anonym ein, und die Ergebnisse werden in Echtzeit visualisiert. Fragen können z.B. sein: "Was hat dir besonders gefallen?" oder "Was könnte ich verbessern?"
 \end{mynote}
-
+\slidesource{Blitzlicht: Meyer et al. (2018), S. 11}
+\note{Meyer et al. (2018), Der Münchner Methodenkasten, Version 6,
+S. 11: Blitzlicht. Die Quellenangabe bezieht sich auf das Blitzlicht;
+Mentimeter ist eine ergänzende digitale Umsetzung.}
 \end{frame}
 
 \begin{frame}{Feedbackmethoden 3}
@@ -286,6 +323,10 @@ So erhalten die Vortragenden hinterher ein umfassendes Feedback.
   \begin{mynote}[Interaktive Mindmap]
     In einer interaktiven Mindmap kann Feedback zu verschiedenen Aspekten einer Präsentation gesammelt werden. Die SuS tragen ihre Rückmeldungen zu den einzelnen Kategorien in die Mindmap ein, sodass ein umfassendes Bild entsteht. Kategorien könnten sein: Inhalt, Struktur, Visualisierung und Verständlichkeit. 
   \end{mynote}
+\slidesource{Feedbackanker: Deutsche Schülerakademien (2016); Mindmap: Meyer et al. (2018)}
+\note{Feedbackanker: Methodensammlung der Deutschen Schülerakademien,
+internes Dokument, Stand 2016. Quellenzuordnung nach Angabe des Vortragenden.
+Interaktive Mindmap: adaptiert nach Meyer et al. (2018), S. 11.}
 \end{frame}
 
 \begin{frame}{Feedbackmethoden 4}
@@ -306,31 +347,120 @@ Alternative Fragen:
 \item Welches Argument hat Dich nicht überzeugt?
 \end{itemize}
 \end{mynote}
+\slidesource{One-Minute-Paper: nach Meyer et al. (2018), S. 12}
+\note{Meyer et al. (2018), S. 12, beschreibt das One-Minute-Paper mit
+kurzen Fragen zur wichtigsten Erkenntnis und zu offenen Verständnisfragen.
+Die Plus-/Minus-Karten und die weiteren Fragen sind Varianten.}
+\end{frame}
+
+\begin{frame}{Gesprächsbasierte Feedbackmethoden 1}
+\small
+\begin{mynote}[Feedbackleiter mit Antwortphase]
+\begin{enumerate}
+  \item \textbf{Klären:} Das Publikum stellt Verständnisfragen.
+  \item \textbf{Würdigen:} Stärken mit konkreten Beispielen benennen.
+  \item \textbf{Bedenken äußern:} Schwierigkeiten nachvollziehbar beschreiben.
+  \item \textbf{Vorschlagen:} Ideen zur Verbesserung anbieten.
+\end{enumerate}
+\end{mynote}
+\vspace{2mm}
+\textbf{Ergänzte Antwortphase:} Die vortragende Person fasst Rückmeldungen
+zusammen, fragt nach und erläutert, welche Anregungen sie aufgreift.
+\par\vspace{2mm}
+\textit{\glqq Fehlte euch beim Übergang eine Zusammenfassung oder die
+Verbindung zum nächsten Thema?\grqq}
+\slidesource{Project Zero: Ladder of Feedback, \url{https://pz.harvard.edu/sites/default/files/2024-10/Ladder\%20of\%20Feedback\%202019.pdf}}
+\note{Vier Schritte nach Project Zero, The Ladder of Feedback,
+Methodenblatt nach David Perkins (2003):
+\url{https://pz.harvard.edu/sites/default/files/2024-10/Ladder\%20of\%20Feedback\%202019.pdf}.
+Die abschließende Antwortphase und die Beispielfrage sind eine Anpassung
+für das Seminar; sie gehören nicht zu den vier ursprünglichen Stufen.}
+\end{frame}
+
+\begin{frame}{Gesprächsbasierte Feedbackmethoden 2}
+\small
+\begin{mynote}[Critical Response Process nach Liz Lerman]
+\begin{enumerate}
+  \item \textbf{Wahrnehmungen:} Das Publikum benennt, was besonders interessant oder bedeutsam war.
+  \item \textbf{Eigene Fragen:} Die vortragende Person fragt gezielt nach.
+  \item \textbf{Neutrale Rückfragen:} Das Publikum fragt; die vortragende
+        Person antwortet.
+  \item \textbf{Einschätzungen mit Zustimmung:} \glqq Ich habe eine
+        Anregung zur Grafik. Möchtest du sie hören?\grqq
+\end{enumerate}
+\end{mynote}
+\vspace{2mm}
+\textbf{Reaktion der vortragenden Person:} Eigene Absichten erklären,
+Unklarheiten besprechen und zum Schluss mögliche Änderungen benennen.
+\par\vspace{2mm}
+\textit{Eine moderierende Person führt durch die vier Schritte.}
+\slidesource{Lerman (2020)}
+\note{Lerman (2020), Critical Response Process: The Basics:
+\url{https://lizlerman.com/2020/04/24/critical-response-process-basics/}.
+Ausführlicher Ablauf: \url{https://lizlerman.com/critical-response-process/}.
+Das Verfahren stammt aus der Arbeit an künstlerischen Entwürfen.
+Hier werden die Rollen auf Probevorträge übertragen.
+Die Beispielfrage ist für das Seminar formuliert.}
+\end{frame}
+
+\begin{frame}{Gesprächsbasierte Feedbackmethoden 3}
+\small
+\begin{mynote}[Feedbackgespräch nach dem R2C2-Modell]
+\begin{enumerate}
+  \item \textbf{Gesprächsbasis schaffen:} Gemeinsam einen Schwerpunkt wählen.
+  \item \textbf{Reaktionen erkunden:} \glqq Wie siehst du die Rückmeldung?\grqq
+  \item \textbf{Inhalte klären:} Konkrete Situationen und unterschiedliche
+        Wahrnehmungen besprechen.
+  \item \textbf{Verbesserungen planen:} Gemeinsam einen nächsten Schritt
+        und eine Gelegenheit zum Erproben vereinbaren.
+\end{enumerate}
+\end{mynote}
+\vspace{2mm}
+\textbf{Reaktion der vortragenden Person:} Die eigene Sicht einbringen,
+Beispiele erfragen und Vorschläge gemeinsam weiterentwickeln.
+\par\vspace{2mm}
+
+\slidesource{Sargeant et al. (2017)}
+\note{R2C2 steht für Relationship, Reaction, Content und Coaching.
+Quelle: Sargeant et al. (2017), doi:10.4300/JGME-D-16-00398.1.
+Die qualitative Studie umfasste sieben Weiterbildungsassistentinnen
+und -assistenten sowie fünf betreuende Personen. Sie untersuchte Nutzen
+und Akzeptanz des Gesprächsmodells, nicht seine Überlegenheit gegenüber
+anderen Feedbackmethoden. Die Fragen sind für das Seminar adaptiert.}
 \end{frame}
 
 
 \section{Abschluss und Fazit}
 \begin{frame}{Abschluss und Fazit}
 \begin{itemize}
-  \item Die Planung von Präsentationen sollte das Wechselspiel zwischen Zielgruppe, Zielsetzung und Umsetzung im Kontext berücksichtigen.
-  \item Eine klare Strategie und Struktur ist entscheidend für eine erfolgreiche Präsentation.
-  \item Visualisierungen und Hilfsmittel sollten die Präsentation unterstützen, nicht ersetzen.
-  \item \textit{Du} bist die Präsentation, nicht die Folien: verbale und nonverbale Kommunikation beachten.
-  \item Gutes Feedback ist ein wertvolles Geschenk.
+  \item<1-> Die Planung von Präsentationen sollte das Wechselspiel zwischen Zielgruppe, Zielsetzung und Umsetzung im Kontext berücksichtigen.
+  \item<2-> Eine klare Strategie und Struktur ist entscheidend für eine erfolgreiche Präsentation.
+  \item<3-> Visualisierungen und Hilfsmittel sollten die Präsentation unterstützen, nicht ersetzen.
+  \item<4-> \textit{Du} bist die Präsentation, nicht die Folien: verbale und nonverbale Kommunikation beachten.
+  \item<5-> Gutes Feedback ist ein wertvolles Geschenk.
 \end{itemize}
 
-Ausblick: Ihr haltet im Semester fachliche Vorträge. Informationsblatt beachten. Überlegt euch zudem eine Feedbackmethode und wendet sie an.
+\only<6->{Ausblick: Ihr haltet im Semester fachliche Vorträge. Beachtet das Informationsblatt dazu. Überlegt euch zudem eine Feedbackmethode und wendet sie an. Ihr könnt die Methoden auch kombinieren oder euch neue ausdenken.}
 \end{frame}
 
 \begin{frame}{Literatur: Präsentationen}
   \footnotesize
-  \nocite{noetel2022,fiorella2021,agarwal2021,10.3389/fpsyg.2019.03087,brandmo2025,roehl2025,levinielsen2026}
+  \nocite{noetel2022,fiorella2021,agarwal2021,yates2002,10.3389/fpsyg.2019.03087,brandmo2025,roehl2025,levinielsen2026}
+  \AtNextBibliography{\defcounter{maxnames}{3}\defcounter{minnames}{1}}
   \printbibliography[heading=none,keyword=presentation]
 \end{frame}
 
 \begin{frame}{Literatur: Feedback}
   \footnotesize
   \printbibliography[heading=none,keyword=learningfeedback]
+\end{frame}
+
+\begin{frame}{Literatur: Feedbackmethoden}
+  \footnotesize
+  \nocite{meyer2018,schuelerakademien2016,projectzeroLadder,lerman2020,sargeant2017}
+  \AtNextBibliography{\defcounter{maxnames}{3}\defcounter{minnames}{1}}
+  \setlength{\bibitemsep}{3pt}
+  \printbibliography[heading=none,keyword=feedbackmethod]
 \end{frame}
 
 \appendix

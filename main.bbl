@@ -93,6 +93,27 @@
     \field{year}{2025}
   \endentry
 
+  \entry{schuelerakademien2016}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutsche Schülerakademien}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \keyw{feedbackmethod}
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{note}{Internes Dokument, Stand 2016}
+    \field{title}{Methodensammlung}
+    \field{year}{2016}
+  \endentry
+
   \entry{fiorella2021}{incollection}{}{}
     \name{author}{2}{}{%
       {{hash=FL}{%
@@ -144,6 +165,30 @@
     \field{year}{2021}
   \endentry
 
+  \entry{lerman2020}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=LL}{%
+         family={Lerman},
+         familyi={L\bibinitperiod},
+         given={Liz},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{feedbackmethod}
+    \strng{namehash}{LL1}
+    \strng{fullhash}{LL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+  \field{note}{\href{https://lizlerman.com/2020/04/24/critical-response-process-basics/}{Methodenbeschreibung}
+  und \href{https://lizlerman.com/critical-response-process/}{Ablauf}}
+    \field{title}{Critical Response Process: The Basics}
+    \field{year}{2020}
+  \endentry
+
   \entry{levinielsen2026}{article}{}{}
     \name{author}{4}{}{%
       {{hash=LNS}{%
@@ -189,6 +234,80 @@
     \field{volume}{115}
     \field{journaltitle}{Journal of School Psychology}
     \field{year}{2026}
+  \endentry
+
+  \entry{meyer2018}{report}{}{}
+    \name{author}{8}{}{%
+      {{hash=MBE}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Barbara\bibnamedelima E.},
+         giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=ABJ}{%
+         family={Antosch-Bardohn},
+         familyi={A\bibinithyphendelim B\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beckmann},
+         familyi={B\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BB}{%
+         family={Beege},
+         familyi={B\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=FC}{%
+         family={Frauer},
+         familyi={F\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hendrich},
+         familyi={H\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hübner},
+         familyi={H\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Primus},
+         familyi={P\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{feedbackmethod}
+    \strng{namehash}{MBE+1}
+    \strng{fullhash}{MBEABJBMBBFCHAHCPN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{note}{\href{https://cms-cdn.lmu.de/media/62-spezial/profil/downloads/muenchner-methodenkasten_v002.pdf}{Onlinefassung}}
+    \field{number}{Version 6}
+    \field{title}{Der Münchner Methodenkasten}
+    \verb{url}
+    \verb https://cms-cdn.lmu.de/media/62-spezial/profil/downloads/muenchner-me
+    \verb thodenkasten_v002.pdf
+    \endverb
+    \list{institution}{1}{%
+      {PROFiL, Ludwig-Maximilians-Universität München}%
+    }
+    \field{type}{Methodensammlung}
+    \field{year}{2018}
   \endentry
 
   \entry{noetel2022}{article}{}{}
@@ -265,6 +384,27 @@
     \field{year}{2022}
   \endentry
 
+  \entry{projectzeroLadder}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=P}{%
+         family={{Project Zero}},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \keyw{feedbackmethod}
+    \strng{namehash}{P1}
+    \strng{fullhash}{P1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labeldatesource}{nodate}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{howpublished}{Harvard Graduate School of Education}
+    \field{note}{Nach David Perkins (2003).
+  \href{https://pz.harvard.edu/sites/default/files/2024-10/Ladder\%20of\%20Feedback\%202019.pdf}{Methodenblatt}}
+    \field{title}{The Ladder of Feedback}
+  \endentry
+
   \entry{roehl2025}{article}{}{}
     \name{author}{3}{}{%
       {{hash=RS}{%
@@ -305,6 +445,72 @@
     \field{volume}{37}
     \field{journaltitle}{Educational Assessment, Evaluation and Accountability}
     \field{year}{2025}
+  \endentry
+
+  \entry{sargeant2017}{article}{}{}
+    \name{author}{7}{}{%
+      {{hash=SJ}{%
+         family={Sargeant},
+         familyi={S\bibinitperiod},
+         given={Joan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mann},
+         familyi={M\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Manos},
+         familyi={M\bibinitperiod},
+         given={Sarah},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=EI}{%
+         family={Epstein},
+         familyi={E\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Warren},
+         familyi={W\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Shearer},
+         familyi={S\bibinitperiod},
+         given={Cindy},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Boudreau},
+         familyi={B\bibinitperiod},
+         given={Michelle},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{feedbackmethod}
+    \strng{namehash}{SJ+1}
+    \strng{fullhash}{SJMKMSEIWASCBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.4300/JGME-D-16-00398.1
+    \endverb
+    \field{number}{2}
+    \field{pages}{165\bibrangedash 170}
+    \field{title}{{R2C2} in Action: Testing an Evidence-Based Model to
+  Facilitate Feedback and Coaching in Residency}
+    \field{volume}{9}
+    \field{journaltitle}{Journal of Graduate Medical Education}
+    \field{year}{2017}
   \endentry
 
   \entry{10.3389/fpsyg.2019.03087}{article}{}{}
@@ -368,6 +574,35 @@
     \field{volume}{10}
     \field{journaltitle}{Frontiers in Psychology}
     \field{year}{2020}
+  \endentry
+
+  \entry{yates2002}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=YJ}{%
+         family={Yates},
+         familyi={Y\bibinitperiod},
+         given={Joanne},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{presentation}
+    \strng{namehash}{YJ1}
+    \strng{fullhash}{YJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{howpublished}{MIT OpenCourseWare, 15.289 Communication Skills for
+  Academics, Spring 2002}
+  \field{note}{\href{https://ocw.mit.edu/courses/15-289-communication-skills-for-academics-spring-2002/4c878edf593ac37ab28c98d44cc4667a_289presentation.pdf}{Vorlesungsfolien}}
+    \field{title}{Giving Oral Presentations}
+    \verb{url}
+    \verb https://ocw.mit.edu/courses/15-289-communication-skills-for-academics
+    \verb -spring-2002/4c878edf593ac37ab28c98d44cc4667a_289presentation.pdf
+    \endverb
+    \field{year}{2002}
   \endentry
 \enddatalist
 \endinput
