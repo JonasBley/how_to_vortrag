@@ -5,13 +5,13 @@
   \filldraw[fill=white,draw=Muted!45,line width=.6pt] (0,0) rectangle (12,6.75);
   \node[anchor=north west,text=Ink,font=\sffamily\bfseries\large,
         text width=10.9cm,inner sep=0pt] at (.5,6.25)
-        {Am ebenen Spiegel sind Einfalls- und Reflexionswinkel gleich};
+        {Einfallswinkel gleich Ausfallswinkel.};
   % Left: short explanation; right: relevant figure with adjacent labels.
   \node[anchor=north west,text width=4.2cm,align=left,inner sep=0pt,
         font=\sffamily\normalsize] at (.5,4.65)
         {\textbf{Der Bezug ist das Lot.}\\[5mm]
          Beide Winkel werden zwischen Lichtstrahl und Lot gemessen.\\[6mm]
-         \Large\textcolor{granat}{$\bm{\alpha}$} $\;\bm{=}\;$ \textcolor{LeipzigBlue}{$\quad\quad\bm{\beta}$}};
+         \Large\textcolor{granat}{$\quad\quad\bm{\alpha}$} $\;\bm{=}\;$ \textcolor{LeipzigBlue}{$\bm{\beta}$}};
   \fill[aquamarin!20] (5.4,1.75) rectangle (11.45,1.97);
   \draw[Ink,line width=1.2pt] (5.4,1.97)--(11.45,1.97);
   \draw[dashed,Muted,line width=.8pt] (8.4,1.97)--(8.4,4.9);
